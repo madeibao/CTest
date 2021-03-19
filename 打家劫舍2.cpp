@@ -1,5 +1,4 @@
 
-
 #include<iostream>
 #include<bits/stdc++.h>
 
@@ -17,6 +16,8 @@ public:
 			return max(arr[0],arr[1]);
 		}
 
+
+		// 初始化一个数组，默认值为0
 		vector<int> dp {arr.size(), 0};
 
 		dp[0] = arr[0];

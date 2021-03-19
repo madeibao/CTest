@@ -2,7 +2,6 @@
 
 // leetcode 547 朋友圈的值。
 
-
 #include<iostream>
 #include<bits/stdc++.h>
 
@@ -11,7 +10,6 @@ class Solution {
 	public:
 
 		vector<int> fathers;
-
 		int find(int i) {
 			while (fathers[i]!=i) {
 				i = fathers[i];

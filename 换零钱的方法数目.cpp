@@ -5,8 +5,7 @@
 9
  +7进行取模后的答案。
 输入描述:
-输出包括两行，第一行包括两个整数n(0 \leq n \leq 1000)(0≤n≤1000)和aim(0 \leq aim \leq 20000)(0≤aim≤20000)。第二行包含n个整数，表示arr数组\left( 1 \leq arr_i \leq 1e9 \right)(1≤arr 
-i
+输出包括两行，第一行包括两个整数n(0 \leq n \leq 1000)(0≤n≤1000)和aim(0 \leq aim \leq 20000)(0≤aim≤20000)。第二行包含n个整数，表示arr数组\left( 1 \leq arr_i \leq 1e9 \right)(1≤arr i
 ​	
  ≤1e9)。
 输出描述:
@@ -54,6 +53,10 @@ int main() {
     cout<<dp[aim]<<endl;
     return 0;
 }
+
+
+
+
 
 
 

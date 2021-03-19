@@ -1,5 +1,4 @@
 
-
 #include<iostream>
 #include<bits/stdc++.h>
 
@@ -14,6 +13,9 @@ struct TreeNode {
     TreeNode(int x) : left(nullptr), right(nullptr), val(x) {}
 };
 
+//--------------------------------------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------------------------------------------------------
+
 class Solution {
     public:
         vector<vector<int>> levelTree(TreeNode* root) {
@@ -21,7 +23,7 @@ class Solution {
             if(!root) {
                 return res;
             }
-
+            
             queue<TreeNode*> q;
             q.push(root);
 

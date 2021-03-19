@@ -7,7 +7,7 @@ struct ListNode {
     int val;
     ListNode *next;
     ListNode(int x) : val(x), next(NULL) { }
-}
+};
 
 class Solution {
 
@@ -17,13 +17,14 @@ class Solution {
         ListNode *p = head;
         while (p) {
             ListNode *next2 = p->next;
-            p->next = temp; 
+            p->next = temp;
             temp = p;
             p = next2;
         }
         return temp;
     }
-}
+};
+
 int main(int argc, char* argv[]) {
     ListNode *n1 =new ListNode(1);
     ListNode *n2 =new ListNode(2);
@@ -37,8 +38,8 @@ int main(int argc, char* argv[]) {
 
     Solution s;
     ListNode * res =s.reverseList(n1);
-    while(res) {
-        cout <<res.val<<" ";
+    while(res!=nullptr) {
+        cout <<res->val<<" ";
         res= res->next;
     }
 

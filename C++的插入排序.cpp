@@ -31,8 +31,8 @@ int main(int argc, char* argv[]) {
 }
 
 
-/**
 
+/**
 def Selectionsort1(A):
     for i in range(len(A)):
         min = i
@@ -41,7 +41,6 @@ def Selectionsort1(A):
                 min = j
         A[i], A[min] = A[min], A[i]     # 交换最小值到左边
     return A
-
 
 list2 = [2, 1, 2, 3, 3, 4, 5, 6, 67]
 print(Selectionsort1(list2))

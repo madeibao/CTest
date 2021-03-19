@@ -10,6 +10,7 @@ struct ListNode {
 	ListNode(int x):val(x),next(nullptr) {}
 };
 
+
 class Solution {
 public:
 	ListNode* deleteNode(ListNode* head,int n) {
@@ -23,6 +24,7 @@ public:
 			fast = fast->next;
 		}
 
+		
 		while(fast->next!=nullptr) {
 			slow = slow->next;
 			fast = fast->next;

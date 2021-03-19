@@ -1,44 +1,41 @@
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode* reverse(ListNode* head,ListNode *tail) {  //反转链表模板，建议背住
+        auto p1 = head, p2 = head->next;
 
-#include<stdio.h>
-#include<string.h>
-#include<stdbool.h>
-void swap(char *a, char *b) {
-    char c;
-
-    c = *a;
-    *a = *b;
-    *b = c;
-}
-
-bool isVowels(char c) {
-    if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U') {
-            return true;
-    }
-    return false;
-}
-
-char * reverseVowels(char * s){
-    int l = 0, r = strlen(s) - 1;
-
-    while (l < r) {
-        if (isVowels(s[l]) && isVowels(s[r])) {
-            swap(s + l, s + r);
-            l++;
-            r--;
-            continue;
+        while (p2 != tail) {
+            auto p3 = p2->next;
+            p2->next = p1;
+            p1 = p2, p2 = p3;
         }
-        if (!isVowels(s[l]))
-            l++;
-        if (!isVowels(s[r]))
-            r--;
+
+        return p1;
     }
-    return s;
-}
+
+    ListNode* reverseKGroup(ListNode* head, int k) {
+        if (!head || !head->next) return head;
+
+        auto tail = head;
+        for (int i = 0; i < k; i ++ ) {                 //遍历k个节点
+            if (!tail) return head;                     //不足k个节点则不反转，直接返回
+            tail = tail->next;                          //使尾结点与头结点相距k
+        }
+
+        auto newHead = reverse(head, tail);             //反转长度为k的链表
+        head->next = reverseKGroup(tail, k);            //递归将下一段反转链表接到当前段的尾部
+                                                        //这一段很久都没整明白，稿纸上比划了下才清楚了
+        return newHead;
+    }
+};
 
 
-int main() {
-
-    char ch[] ="hello";
-    puts(reverseVowels(ch));
-    return 0;
-}

@@ -1,3 +1,6 @@
+
+
+
 while True:
     try:
         n = int(input())
@@ -11,8 +14,6 @@ while True:
         print(ans)
     except:
         break
-
-
 
 
 while True:

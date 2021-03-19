@@ -1,7 +1,5 @@
 
 
-
-
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
@@ -13,7 +11,6 @@ struct ListNode {
 
 
 class Solution {
-
 public:
     bool hasCycle(ListNode *head) {
         if(head==nullptr||head->next==nullptr) {
@@ -21,6 +18,8 @@ public:
         }
         ListNode *first = head;
         ListNode *second = head;
+
+        // 两个快慢指针来实现判断是否有环。
         while(first!=nullptr&&first->next!=nullptr) {
             first= first->next->next;
             second = second->next;

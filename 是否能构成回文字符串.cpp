@@ -2,7 +2,6 @@
 #include<iostream>
 #include<unordered_map>
 
-
 using namespace std;
 
 class Solution {
@@ -23,6 +22,9 @@ public:
                 cnt++;
             }
         }
+
+
+        // 能否构成回文的字符串值。
         return cnt<2;
     }
 };

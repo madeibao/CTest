@@ -10,7 +10,7 @@ public:
     string reverseVowels(string s) {
         string v = "aeiouAEIOU";
         int i = -1,j = s.size();
-        while(i<j){
+        while(i<j) {
             while(i<j && v.find(s[++i])==v.npos);
             while(i<j && v.find(s[--j])==v.npos);
             swap(s[i],s[j]);

@@ -1,9 +1,6 @@
 
-
-
-
 // 两个有序的链表来进行合并。
-// #--------------------------------------------------------------------------------------------------------------------------------
+// #-------------------------------------------------------------------------------------------------------------------------------------------------
 
 #include<iostream>
 #include<bits/stdc++.h>
@@ -12,35 +9,40 @@ using namespace std;
 struct ListNode {
     int val;
     struct ListNode *next;
-    ListNode(int x) :
-            val(x), next(nullptr) {
-    }
+    ListNode(int x): val(x), next(nullptr) {}
 };
 
+// 递归一定要有结束的结束的条件。
+// 比如，本程序中的 h1==nullptr  h2 ==nullptr 就是递归结束的条件。
 
-class Solution{
+class Solution {
 public:
     ListNode* mergeNode(ListNode* h1, ListNode* h2) {
         ListNode* h;
 
-        if(h1==nullptr) return h2;
-        if(h2==nullptr) return h1;
+        if(h1==nullptr) {
+            return h2;
+        }
 
-            if(h1->val<h2->val) {
-                h = h1;
-                h->next  = mergeNode(h1->next, h2);
-            }
-            else {
-                h = h2;
-                h->next = mergeNode(h1, h2->next);
-            }
+        if(h2==nullptr) {
+            return h1;
+        }
+
+        if(h1->val<h2->val) {
+            h = h1;
+            h->next = mergeNode(h1->next, h2);
+        }
+        else {
+            h = h2;
+            h->next = mergeNode(h1, h2->next);
+        }      
         return h;
     }
-
 };
 
 
-int main() {
+int main(int argc, char* argv[]) {
+
     ListNode* h1 = new ListNode(1);
     ListNode* h2 = new ListNode(2);
     h1->next = h2;
@@ -59,5 +61,4 @@ int main() {
         cout<<res->val<<" ";
         res = res->next;
     }
-
 }

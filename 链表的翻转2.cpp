@@ -1,4 +1,5 @@
 
+// 判断链表是否有环
 
 #include<iostream>
 #include<bits/stdc++.h>
@@ -7,7 +8,7 @@ using namespace std;
 struct ListNode {
     int val;
     ListNode *next;
-    ListNode(int x):val(x),next(nullptr){}
+    ListNode(int x):val(x),next(nullptr) {}
 };
 
 // 头插法来实现链表的翻转的操作。
