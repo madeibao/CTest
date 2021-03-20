@@ -38,7 +38,7 @@ public:
 
 int main(int argc, char* argv[]) {
 
-	ListNode* head = new ListNode(1);
+    ListNode* head = new ListNode(1);
     ListNode* h2 = new ListNode(2);
     ListNode* h3 = new ListNode(3);
     ListNode* h4 = new ListNode(4);
