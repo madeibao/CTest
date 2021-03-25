@@ -8,9 +8,9 @@ using namespace std;
 class Solution {
 public:
     /**
-     * 判断岛屿数量
-     * @param grid char字符型vector<vector<>>
-     * @return int整型
+     * 鍒ゆ柇宀涘笨鏁伴噺
+     * @param grid char瀛楃鍨媣ector<vector<>>
+     * @return int鏁村瀷
      */
     int solve(vector<vector<char>>  &grid) {
         // write code here

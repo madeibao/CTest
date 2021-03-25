@@ -2,9 +2,7 @@
 
 #include<iostream>
 #include<bits/stdc++.h>
-
 using namespace std;
-
 struct ListNode {
 	int val;
 	ListNode* next;
@@ -20,6 +18,7 @@ public:
         	return head;
         }
 
+        // 第二部分的开始节点值。
         ListNode* middle = middle2(head);
         return merge(sortInList(head), sortInList(middle));
     }
@@ -35,7 +34,6 @@ public:
         slow->next = nullptr;
         return res;
 	}
-
 
 	ListNode* merge(ListNode*heada, ListNode* headb) {
 		if(!heada) {
@@ -57,7 +55,6 @@ public:
 		}
 		return res;
 	}
-
 };
 
 int main(int argc, char* argv[]) {
@@ -69,14 +66,12 @@ int main(int argc, char* argv[]) {
     ListNode* n5 = new ListNode(9);
     ListNode* n6 = new ListNode(6);
 
-
     n1->next = n2;
     n2->next = n3;
     n3->next = n4;
     n4->next = n5;
     n5->next = n6;
     n6->next = nullptr;
-
 
     ListNode* res;
     Solution s;
@@ -87,5 +82,4 @@ int main(int argc, char* argv[]) {
     }
 	return 0;
 }
-
 

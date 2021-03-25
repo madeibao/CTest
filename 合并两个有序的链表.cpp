@@ -32,6 +32,8 @@ public:
             h = h1;
             h->next = mergeNode(h1->next, h2);
         }
+
+        
         else {
             h = h2;
             h->next = mergeNode(h1, h2->next);
