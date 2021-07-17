@@ -1,4 +1,3 @@
-/**
 
 #include<iostream>
 using namespace std;
@@ -18,10 +17,9 @@ public:
     }
 };
 
-
 int main(){
     Solution s;
     cout<<s.myPow(2.0,3)<<endl;
 }
 
-*/
+

@@ -15,7 +15,6 @@ struct TreeNode {
 
 class Solution {
 public:
-
 	int sumLeft(TreeNode *root) {
 		int sum = 0, left =0, right =0;
 		if(root==nullptr) {

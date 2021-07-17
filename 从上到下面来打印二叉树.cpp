@@ -11,7 +11,6 @@ struct  TreeNode {
     TreeNode(int x):val(x),left(nullptr),right(nullptr){}
 };
 
-
 class Solution {
 public:
     vector<vector<int>> level(TreeNode* root ) {
@@ -47,7 +46,6 @@ public:
     }
 };
 
-
 int main(int argc,  char* argv[]) {
 
     TreeNode* root = new TreeNode(1);
@@ -66,9 +64,13 @@ int main(int argc,  char* argv[]) {
         }
         cout<<endl;
     }
-
     return 0;
 }
+
+
+
+
+
 
 
 

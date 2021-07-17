@@ -19,7 +19,7 @@ int main(int argc, char** argv) {
 	for(int i=0;i<v.size();i++) {
 		cout<<v[i]<<" ";
 	}
-	cout<<endl;	
+	cout<<endl;
 
 	cout<<"the second value of V i "<<endl;
 
@@ -27,7 +27,7 @@ int main(int argc, char** argv) {
 	v2.push_back(1);
 	v2.push_back(2);
 	v2.push_back(3);
-	for(int i=0;i<v2.size;i++) {
+	for(int i=0;i<v2.size();i++) {
 		cout<<v2[i]<<" ";
 	}
 

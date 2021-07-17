@@ -5,7 +5,6 @@
 
 using namespace std;
 
-
 char firstChar(string s) {
 
     vector<char> ch(26, 0);

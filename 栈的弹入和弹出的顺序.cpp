@@ -26,7 +26,7 @@ int main(int argc, char* argv[]) {
 
 	Solution s;
 	vector<int> pushed = {1,2,3,4,5};
-	vector<int> poped = {1,2,3,4,5};
+	vector<int> poped =  {1,2,3,4,5};
 	cout<<s.stackOrder(pushed,poped)<<endl;
 
 	return 0;

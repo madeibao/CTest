@@ -1,7 +1,6 @@
 
 
 
-/**
 #include <iostream>
 
 using namespace std;
@@ -29,7 +28,5 @@ int main() {
     // 刚才我们已经知道*&p是a的地址，那么**&p就表示a的值
     return 0;
 }
-
-*/
 
 

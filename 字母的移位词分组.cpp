@@ -1,10 +1,7 @@
 
-
 #include <iostream>
 #include <bits/stdc++.h>
-
 using namespace std;
-
 class Solution {
 public:
 	vector<vector<string>> groupAnagrams(vector<string> &strs) {
@@ -25,7 +22,7 @@ public:
 
 int main(int argc, char* argv[]) {
 
-	vector<string> res{"eat", "tea", "tan", "ate", "nat", "bat"};
+	vector<string> res = {"eat", "tea", "tan", "ate", "nat", "bat"};
 	vector<vector<string>> temp;
 	Solution s;
 	temp = s.groupAnagrams(res);
@@ -35,6 +32,8 @@ int main(int argc, char* argv[]) {
 		}
 		cout<<endl;
 	}
-
 	return 0;
 }
+
+
+

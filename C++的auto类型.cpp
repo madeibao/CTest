@@ -1,6 +1,4 @@
 
-
-/**
 #include<iostream>
 #include<typeinfo>
 using namespace std;
@@ -15,6 +13,5 @@ int main(){
     cout<<typeid(a_auto).name()<<endl;
     return 0;
 }
-*/
 
 

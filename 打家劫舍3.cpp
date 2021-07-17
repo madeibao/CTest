@@ -1,5 +1,8 @@
 
 
+// 相邻的房子不能打劫，求最大的获得的价值。
+// 动态规划的思想。
+
 #include<iostream>
 #include<bits/stdc++.h>
 

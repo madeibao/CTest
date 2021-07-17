@@ -7,8 +7,8 @@
 using namespace std;
 
 int main () {
-   char str1[13] = "runoob";
-   char str2[13] = "google";
+   const char str1[13] = "runoob";
+   const char str2[13] = "google";
    char str3[13];
    int len ;
 

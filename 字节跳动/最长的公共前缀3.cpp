@@ -3,7 +3,6 @@
 #include<bits/stdc++.h>
 using namespace std; //
 
-
 class Solution {
 public:
     /**
@@ -16,7 +15,6 @@ public:
 			if(!strs.size()) {
 				return "";
 			}
-
 			string temp = strs[0];
 			for(int i=1;i<strs.size();i++) {
 				temp = helper(temp, strs[i]);

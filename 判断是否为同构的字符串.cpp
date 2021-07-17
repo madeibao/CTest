@@ -1,4 +1,11 @@
 
+// 
+// Copyright (c)
+// All rights reserved.
+
+/// 判断是否为同构的字符串，同构的字符串
+// 同构字符串指的是 abb cdd 
+
 
 #include <iostream>
 #include <bits/stdc++.h>

@@ -1,8 +1,6 @@
 
 
 // 与leetcode84 的题目是相似的。
-
-
 #include <iostream>
 #include <vector>
 #include <sstream>

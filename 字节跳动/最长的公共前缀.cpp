@@ -1,14 +1,11 @@
 
-
 #include<iostream>
 #include<bits/stdc++.h>
 
 using namespace std;
-
 class Solution {
 public:
     /**
-     *
      * @param strs string字符串vector
      * @return string字符串
      */

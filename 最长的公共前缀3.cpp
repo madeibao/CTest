@@ -7,6 +7,8 @@ using namespace std;
 class Solution {
 public:
     string longestCommonPrefix(vector<string>& strs) {
+
+    	// 如果是空的情况。
         if (!strs.size()) {
             return "";
         }
@@ -20,6 +22,7 @@ public:
         }
         return prefix;
     }
+
 
     string longestCommonPrefix(const string& str1, const string& str2) {
         int length = min(str1.size(), str2.size());
@@ -40,3 +43,7 @@ int main(int argc, char* argv[]) {
 
 	return 0;
 }
+
+
+
+

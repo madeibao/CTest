@@ -15,7 +15,6 @@ struct ListNode {
 class Solution {
 public:
     /**
-     *
      * @param head1 ListNode类
      * @param head2 ListNode类
      * @return ListNode类

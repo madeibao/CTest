@@ -1,5 +1,6 @@
 
 // 根据一个数字来分割链表。
+// 数字前面的节点都小于数字，数字后面的节点都大于数字
 #include<iostream>
 #include<bits/stdc++.h>
 

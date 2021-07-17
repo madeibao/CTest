@@ -3,11 +3,14 @@
 /**
  * 
  * 首先是选择比较大的数字，然后确保数字是整个数组中的唯一出现的数字。
-#include <iostream>
+ * 
+ */
+
+
+#include<iostream>
 #include<unordered_map>
 #include<vector>
 using namespace std;
-
 
 class Solution {
 
@@ -37,6 +40,7 @@ int main(int argc, char *argv[]) {
     cout<<s.largestUniqueNumber(temp)<<endl;
     return 0;
 }
-*/
+
+
 
 

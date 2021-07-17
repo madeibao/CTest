@@ -1,7 +1,6 @@
 
 #include<iostream>
 #include<bits/stdc++.h>
-
 #include<stdio.h>
 
 using namespace std;
@@ -10,7 +9,6 @@ char* reverse(char* str) {
 
 	int i =0, j = strlen(str)-1;
 	while(i<j) {
-
 		char temp = str[i];
 		str[i] = str[j];
 		str[j] = temp;
@@ -19,7 +17,6 @@ char* reverse(char* str) {
 	}
 
 	return str;
-
 }
 
 int main(){

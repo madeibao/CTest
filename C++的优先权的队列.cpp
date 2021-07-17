@@ -14,13 +14,13 @@ int main()
     priority_queue<int, vector<int>, greater<int> > c;  //这样就是小顶堆
     priority_queue<string> b;
 
-    for (int i = 0; i < 5; i++)
-    {
+    for (int i = 0; i < 5; i++) {
         a.push(i);
         c.push(i);
     }
-    while (!a.empty())
-    {
+
+    
+    while (!a.empty()) {
         cout << a.top() << ' ';
         a.pop();
     }

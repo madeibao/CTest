@@ -107,11 +107,11 @@ int min(int a,int b,int c){
     return min;  
 }
 
-int main(){
+int main() {
     char s[1000];
     char t[1000];
     
-    while(scanf("%s\n%s\n",&s,&t)!=EOF){
+    while(scanf("%s\n%s\n",&s,&t)!=EOF) {
         int len1=strlen(s);
         int len2=strlen(t);
         int d[1000][1000]={0};

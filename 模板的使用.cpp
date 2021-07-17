@@ -1,8 +1,5 @@
 
 
-
-/**
-
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
@@ -16,6 +13,8 @@ T findmax(T nums[], int len) {
     }
     return val;
 }
+
+
 int main() {
 
     int nums[] ={23,2,34,5,3,3};
@@ -28,5 +27,7 @@ int main() {
     cout<<temp2<<endl;
     return 0;
 }
-*/
+
+
+
 

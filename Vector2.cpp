@@ -1,4 +1,5 @@
-/**
+
+
 #include <iostream>
 #include <vector>
 
@@ -99,9 +100,5 @@ int vec3() {
     }
     return 0;
 }
-
-
-
-***/
 
 

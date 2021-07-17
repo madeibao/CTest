@@ -20,12 +20,9 @@ int main(int argc, char *argv[])
 					flag = 1; printf("NG\n");
 				}
 
-
-		if (flag == 0)
-		{
+		if (flag == 0) {
 			int a = 0, b = 0, c = 0, d = 0;
-			for (int i = 0; i < strlen(str); i++)
-			{
+			for (int i = 0; i < strlen(str); i++) {
 				if (str[i] >= 'A'&&str[i] <= 'Z')
 					a = 1;
 				else if (str[i] >= 'a'&&str[i] <= 'z')

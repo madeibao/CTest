@@ -1,4 +1,6 @@
-/**
+
+
+
 #include <iostream>
 #include <stdlib.h>
 #include<vector>
@@ -31,5 +33,3 @@ int main() {
     cout<<res<<endl;
 }
 
-
-*/

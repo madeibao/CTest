@@ -11,7 +11,6 @@ public:
         string r = strs.size() ? strs[0] : "";
         for(auto s: strs) {
             while(s.substr(0, r.size()) != r) {
-
                 // 不断的截取数字减去,右面减去1
                 r = r.substr(0, r.size() - 1);
                 if(r == "") return r;

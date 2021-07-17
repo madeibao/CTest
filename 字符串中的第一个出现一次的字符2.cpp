@@ -21,6 +21,7 @@ public:
 		return ' ';
 	}
 };
+
 int main(int argc, char** argv) {
 	string str2 ="leetcode";
 	Solution s;

@@ -1,8 +1,6 @@
 
 
 // 检查是否支持C++14.
-
-
 #pragma GCC diagnostic error "-std=c++14"
 #include <iostream>
 using namespace std;

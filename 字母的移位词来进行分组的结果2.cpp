@@ -11,8 +11,7 @@ public:
         vector<vector<string>> groupAnagrams(vector<string>& strs) {
         vector<vector<string>> res;
         unordered_map <string,vector<string> > m;
-        for(string s : strs)
-        {
+        for(string s : strs) {
             string t = s;
             sort(t.begin(),t.end());
             m[t].push_back(s);   //t为单词的按顺序排列，作为key值，m[t]则为该单词的异位词构成的vector，作为value值

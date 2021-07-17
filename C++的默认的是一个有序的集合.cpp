@@ -3,8 +3,6 @@
 // set的默认集合是有序的。
 // 集合的序列是有序的。
 
-
-
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;

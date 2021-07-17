@@ -33,8 +33,14 @@ public:
             if(v1_num < v2_num) return -1;
             else if(v1_num > v2_num) return 1;
         }
-        if(i1 < version1.size()) return 1;
-        else if(i2 < version2.size()) return -1;
+
+
+        if(i1 < version1.size())  {
+        	return 1;
+        }
+        else if(i2 < version2.size()){
+        	return -1;
+        } 
         return 0;
     }
 };

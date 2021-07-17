@@ -11,6 +11,8 @@ struct ListNode {
 
 class Solution {
 public:
+
+	// 前面闭区间，后面开区间算法
 	// 翻转的是一个前面闭区间，后面开区间的一个算法值。
     ListNode* reverse(ListNode* head,ListNode* tail) {
         ListNode* pre = nullptr;
@@ -42,8 +44,6 @@ public:
         return newhead;
     }
 };
-
-
 
 
 int main() {

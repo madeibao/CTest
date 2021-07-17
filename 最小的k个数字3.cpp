@@ -26,8 +26,7 @@ public:
 				queue.push(nums[i]);
 			}
 		}
-
-
+		
 		for(int i=0;i<k;i++) {
 			res[i] = queue.top();
 			queue.pop();

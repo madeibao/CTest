@@ -10,7 +10,6 @@ struct ListNode {
     ListNode(int x) :val(x), next(nullptr) {}
 };
 
-
 class Solution {
 public:
     ListNode* deleteNode(ListNode * head, int x) {

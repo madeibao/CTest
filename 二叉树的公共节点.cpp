@@ -12,7 +12,6 @@ struct TreeNode {
 };
 
 class Solution {
-
 public:
 	TreeNode* ancestor(TreeNode*root, TreeNode* p, TreeNode* q) {
 

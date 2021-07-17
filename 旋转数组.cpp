@@ -1,7 +1,4 @@
 
-
-
-
 #include<iostream>
 #include<bits/stdc++.h>
 
@@ -40,8 +37,6 @@ public:
 };
 
 int main(int argc, char **argv)  {
-
-
 	int m = 2;
 	int n = 6;
 	vector<int> res {1,2,3,4,5,6};

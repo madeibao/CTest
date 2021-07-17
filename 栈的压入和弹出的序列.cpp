@@ -18,6 +18,7 @@ public:
     			j++;
     		}
     	}
+        // 返回结果是否为空的结果值。
     	return stack2.empty();
     }
 };

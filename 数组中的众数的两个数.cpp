@@ -1,5 +1,4 @@
 
-/**
 
 #include<iostream>
 #include<bits/stdc++.h>
@@ -40,7 +39,7 @@ public:
             }
         }
 
-                cnta = 0;
+        cnta = 0;
         cntb = 0;
         for(int num:nums) {
             if(num==a) {
@@ -71,6 +70,3 @@ int main(){
 }
 
 
-*/
-
-//

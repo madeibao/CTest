@@ -1,9 +1,12 @@
+
+
 #include<iostream>
 #include<bits/stdc++.h>
 
 using namespace std;
 
 // 判断是否为合理的括号。
+
 
 class Solution {
 public:
@@ -21,11 +24,15 @@ public:
             		st.pop();
             	}
             	else {
-            		istrue=false;break;
+            		istrue=false;
+            		break;
             	}
             }
         }
-        if(!st.empty()) istrue=false;
+
+        if(!st.empty()) {
+        	istrue=false;
+        }
         return istrue;
     }
 };

@@ -24,7 +24,6 @@ public:
 			fast = fast->next;
 		}
 
-		
 		while(fast->next!=nullptr) {
 			slow = slow->next;
 			fast = fast->next;

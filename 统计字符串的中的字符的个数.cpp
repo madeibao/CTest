@@ -21,9 +21,6 @@ int main() {
 //以上为我自己写的代码，经调试结果不对
 
 
-
-
-
 #include<bits/stdc++.h>
 #include<iostream>
 

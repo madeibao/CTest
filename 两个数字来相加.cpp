@@ -5,14 +5,11 @@
 
 #include<bits/stdc++.h>
 
-
 using namespace std;
-int main()
-{
+int main() {
     string stra;
     string strb;
-    while(cin >> stra >> strb)
-    {
+    while(cin >> stra >> strb) {
         bool flag = false;
         for(int i = 0; i < stra.size(); i++)
         {

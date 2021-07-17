@@ -16,7 +16,8 @@ int isVowels(char c) {
     }
     return 0;
 }
-char * reverseVowels(char * s){
+
+char* reverseVowels(char * s) {
     int l = 0, r = strlen(s) - 1;
 
     while (l < r) {
@@ -35,7 +36,6 @@ char * reverseVowels(char * s){
 }
 
 int main() {
-
 
     char ch[] ="hello";
     puts(reverseVowels(ch));

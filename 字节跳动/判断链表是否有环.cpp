@@ -1,6 +1,8 @@
 
 
 // 判断链表是否有环，是否包含环状的结构。
+// 快慢指针解法，如果有环，一定能够超越指针结构
+
 
 #include <iostream>
 #include <bits/stdc++.h>

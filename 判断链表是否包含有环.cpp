@@ -21,6 +21,8 @@ public:
 
         // 两个快慢指针来实现判断是否有环。
         while(first!=nullptr&&first->next!=nullptr) {
+
+            //  首先走两步。
             first= first->next->next;
             second = second->next;
             if(first==second) {

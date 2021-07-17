@@ -13,8 +13,9 @@ public:
      * @return string字符串vector
      */
 
-    vector<string>res;
+
     vector<string> generateParenthesis(int n) {
+    	vector<string>res;
         // write code here
         string str;
         helper(res,str,n, n);

@@ -1,11 +1,8 @@
 
-
 #include<iostream>
 #include<bits/stdc++.h>
 
-
 using namespace std;
-
 
 class Solution {
 public:
@@ -32,9 +29,7 @@ public:
     }
 };
 
-
 int main(int argc, char* argv[]) { //
-
 
     vector<int> res = {1,2,3,4,5};
     int k =2;
@@ -46,3 +41,6 @@ int main(int argc, char* argv[]) { //
     }
     return 0;
 }
+
+
+

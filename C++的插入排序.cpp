@@ -24,9 +24,16 @@ int main(int argc, char* argv[]) {
 
 	int nums[] ={2,2,3,1,2,3,3,4,4,20,};
 
+	double nums2[] = {2.0,3.0,2.0,4.0};
+	selectSort(nums, sizeof(nums2)/sizeof(nums2[0]));
 	selectSort(nums, sizeof(nums)/sizeof(nums[0]));
     for(auto j:nums) {
         cout<<j<<endl;
+    }
+    cout<<endl;
+
+    for(auto m:nums2) {
+    	cout<<m<< " ";
     }
 }
 

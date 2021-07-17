@@ -7,7 +7,7 @@ using namespace std;
 int main()
 {
     char s[10];
-    if(!cin.getline(s,10)){
+    if(!cin.getline(s,10)) {
         printf("0\n");
         return 0;
     }

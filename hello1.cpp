@@ -6,11 +6,11 @@ using namespace std;
 
 int vecmain() {
     vector<int>obj;
-    for(int i=0;i<10;i++) { //push_back(elem)ÔÚÊý×é×îºóÌí¼ÓÊý¾Ý
+    for(int i=0;i<10;i++) { //push_back(elem)åœ¨æ•°ç»„æœ€åŽæ·»åŠ æ•°æ®
         obj.push_back(i);
         cout<<obj[i]<<",";
     }
-    obj.clear();  // Çå³ýÈÝÆ÷ÖÐËùÒÔÊý¾Ý
+    obj.clear();  // æ¸…é™¤å®¹å™¨ä¸­æ‰€ä»¥æ•°æ®
     for(int i=0;i<obj.size();i++) {
         cout<<obj[i]<<endl;
     }

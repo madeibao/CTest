@@ -16,7 +16,7 @@ int getNum(vector<multimap<int, int, greater<int>>>&score) {
 			ite++;
 		}while(ite != e.end&&ite->first!=preScore);
 	}
-
+	
 	return numPeople.size();
 }
 int main(int argc, char* argv[]) {

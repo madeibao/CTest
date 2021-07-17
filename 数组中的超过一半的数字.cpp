@@ -1,4 +1,8 @@
 
+#include<iostream>
+#include<bits/stdc++.h>
+
+using namespace std;
 
 class Solution {
 public:
@@ -8,7 +12,7 @@ public:
         return nums[nums.size()/2];
 
         //方法2：哈希表
-        unordered_map<int,int>mp;
+        unordered_map<int, int>mp;
         for(auto it : nums) {
             mp[it]++;
             if(mp[it]>nums.size()/2) return it;
@@ -30,9 +34,9 @@ public:
     }
 };
 
-int main(int argc, char**argv){
+int main(int argc, char* argv[]){
 
-	int nums[] = {2,2,3,3,3,3,3,1,};
+	vector<int> nums = {2,2,3,3,3,3,3,1,};
 	Solution s;
 	cout<<s.majorityElement(nums);
 	return 0;

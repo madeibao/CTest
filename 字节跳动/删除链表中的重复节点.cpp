@@ -19,7 +19,6 @@ public:
 		if(!head||!head->next) {
 			return head;
 		}
-
 		if(head->next!=nullptr&&head->val==head->next->val) {
 			while(head->next!=nullptr&&head->val==head->next->val) {
 				head = head->next;

@@ -1,15 +1,12 @@
 
-
-/**
-    下面的内容是无序的图
+// 下面的内容是无序的图
 
 #include <iostream>
 #include <unordered_map>
 #include <map>
 #include <string>
 using namespace std;
-int main()
-{
+int main() {
 	//注意：C++11才开始支持括号初始化
     unordered_map<int, string> myMap={{ 5, "张大" },{ 6, "李五" }};//使用{}赋值
     myMap[2] = "李四";  //使用[ ]进行单个插入，若已存在键值2，则赋值修改，若无则插入。
@@ -17,8 +14,7 @@ int main()
 
 	//遍历输出+迭代器的使用
     auto iter = myMap.begin();//auto自动识别为迭代器类型unordered_map<int,string>::iterator
-    while (iter!= myMap.end())
-    {
+    while (iter!= myMap.end()) {
         cout << iter->first << "," << iter->second << endl;
         ++iter;
     }
@@ -31,7 +27,11 @@ int main()
     return 0;
 }
 
-*/
+
+
+
+
+
 
 
 

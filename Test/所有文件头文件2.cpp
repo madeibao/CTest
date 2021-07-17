@@ -5,7 +5,6 @@ while (~scanf("%d%d",&n,&k)) {
 
 }
 
-
 从文件来读取其中的值 放在main函数的下面:
 int main() {
     freopen("./in.txt", "r", stdin);

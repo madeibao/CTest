@@ -3,8 +3,6 @@
 // leetcode 252的解法。
 // 会议室
 
-
-
 #include<iostream>
 #include<bits/stdc++.h>
 

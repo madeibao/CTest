@@ -17,7 +17,6 @@ public:
             if(c=='(' ||c=='[' ||c=='{') {
                 stack2.push(c);
             }
-
             // 首先是栈不为空，然后逐渐的弹出栈中的序列。
             else if(stack2.size()>0&& stack2.top()==map2[c]) {
                 stack2.pop();

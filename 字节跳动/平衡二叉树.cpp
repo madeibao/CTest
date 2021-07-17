@@ -1,5 +1,4 @@
 
-
 #include<iostream>
 #include<bits/stdc++.h>
 
@@ -14,8 +13,10 @@ struct TreeNode {
 
 class Solution {
 public:
+
+    // 求出树的高度值。
     int TreeDepth(TreeNode *root) {
-        if(root==NULL){
+        if(root==NULL) {
             return 0;
         }
         if(root->left==NULL && root->right==NULL){
@@ -23,7 +24,6 @@ public:
         }
         return 1+max(TreeDepth(root->left),TreeDepth(root->right));
     }
-
 
     bool IsBalanced_Solution(TreeNode* pRoot) {
         if(pRoot==NULL) return true;
@@ -35,7 +35,6 @@ public:
 
 
 int main(int argc, char** argv) {
-
 
 	TreeNode* n1 = new TreeNode(1);
 	TreeNode* n2 = new TreeNode(2);

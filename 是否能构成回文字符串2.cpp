@@ -4,8 +4,7 @@
 using namespace std;
 
 class Solution {
-
-    public:
+public:
     bool canPermute(string s) {
         if(s.size()<2) {
             return 1;

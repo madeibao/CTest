@@ -11,9 +11,9 @@ public:
         if (newab < newba) {
             return true;
         }
-
         return false;
     }
+
     string minNumber(vector<int> &nums) {
         vector<string> numstr;
         string result;
