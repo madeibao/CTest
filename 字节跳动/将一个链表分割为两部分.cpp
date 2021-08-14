@@ -15,7 +15,6 @@ struct ListNode {
 class Solution {
 	public:
 		void split(ListNode* head) {
-
 			if(head==nullptr||head->next==nullptr) {
                 travel(head);
 				return;

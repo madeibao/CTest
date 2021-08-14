@@ -23,6 +23,9 @@ public:
 			n--;
 			cur = cur->next;
 		}
+
+
+		// 如果跑到了末尾的位置上，表明删除的是头节点。指针向后移动
 		if(n==0) {
 			head = head->next;
 		}

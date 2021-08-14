@@ -20,8 +20,6 @@ int main(int argc, char* argv[]) {
 	// 也可以写成一个更加简单的写法：
 
 	auto Add  = [](int a,int b) {return a+b;};
-
-
 	std::cout << Add(1, 2) << std::endl;
 	return 0;
 

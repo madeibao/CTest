@@ -21,6 +21,9 @@ public:
         for(auto p = head;p!=nullptr;p=p->next) {
             n++;
         }
+
+
+        // k值来进行求余数的运算。
         k%=n;
 
         ListNode  *first = head, *second = head;
@@ -34,7 +37,7 @@ public:
             second = second->next;
 
         }
-
+        
         // 向右面旋转
         first->next =  head;
         head = second->next;
@@ -42,6 +45,7 @@ public:
         // 把链表的部分断掉
         second->next = nullptr;
 
+        // 返回头节点的值。
         return head;
 
     }

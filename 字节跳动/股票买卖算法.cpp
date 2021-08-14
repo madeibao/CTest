@@ -1,9 +1,6 @@
 
 
-
 // 股票买卖交易两次算法。
-
-
 #include<iostream>
 #include<bits/stdc++.h>
 
@@ -26,8 +23,6 @@ public:
         return ans;
     }
 };
-
-
 
 int main(int argc, char* argv[]) {
 

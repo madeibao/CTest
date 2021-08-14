@@ -9,9 +9,7 @@ using namespace std;
 class Solution {
 public:
     int minNumberInRotateArray(vector<int> rotateArray) {
-        
         int i=0, j = rotateArray.size()-1;
-
         while (i<j) {
         	int mid = (i+j)/2;
 

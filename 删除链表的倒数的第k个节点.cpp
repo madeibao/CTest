@@ -11,6 +11,8 @@ struct ListNode {
 };
 
 
+// 移动k个位置之后的内容上移动k个节点
+
 class Solution {
 public:
 	ListNode* deleteNode(ListNode* head,int n) {

@@ -27,6 +27,7 @@ public:
 
     	ListNode* cur = head;
     	for(int i=0; i<k; i++) {
+            // 对于不足k个的情况内容
     		if(!cur) {
     			return head;
     		}

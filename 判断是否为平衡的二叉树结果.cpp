@@ -12,8 +12,6 @@ struct TreeNode {
 	TreeNode(int x): val(x), left(NULL), right(NULL) {}
 };
 
-
-
 class Solution {
 	public:
 		int f=1;

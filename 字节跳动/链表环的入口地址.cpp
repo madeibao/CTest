@@ -12,10 +12,9 @@ struct ListNode {
 };
 class Solution {
 public:
-    ListNode* EntryNodeOfLoop(ListNode* pHead)
-    {
+    ListNode* EntryNodeOfLoop(ListNode* pHead) {
         ListNode*fast=pHead,*low=pHead;
-        while(fast&&fast->next){
+        while(fast&&fast->next) {
             fast=fast->next->next;
             low=low->next;
             if(fast==low)

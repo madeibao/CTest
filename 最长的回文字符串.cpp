@@ -26,7 +26,6 @@ public:
         //该函数的意思是获取从start开始长度为mlen长度的字符串
     }
 
-
 private:
     //计算以left和right为中心的回文串长度 
     int expendaroundcenter(string s,int left,int right) {

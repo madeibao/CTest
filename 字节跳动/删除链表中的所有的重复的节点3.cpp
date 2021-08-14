@@ -22,8 +22,12 @@ public:
 			while(head->next!=nullptr&&head->val==head->next->val) {
 				head = head->next;
 			}
+
+			// 从下一个节点来进行删除。
 			return deleteDuplicates(head->next);
 		}
+
+		// 另一种情况。
 		else {
 			head->next = deleteDuplicates(head->next);
 		}

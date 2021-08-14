@@ -12,7 +12,6 @@ struct ListNode {
 	ListNode(int v, ListNode* next): val(v), next(nullptr) {}
 };
 
-
 class Solution {
 public:
     ListNode* deleteDuplicates(ListNode* head) {
@@ -34,6 +33,36 @@ public:
     	return head;
     }
 };
+
+
+// 1 1 2 2 3 4 5 
+
+class Solution {
+public:
+    ListNode* deleteDuplicates(ListNode* head) {
+        ListNode* dummyhead = new ListNode(-1);
+        dummyhead -> next = head;
+        ListNode* p = dummyhead;
+        while(p -> next && p -> next -> next){
+            bool tag = false;           //标志位记录p后面是否经过处理
+            while(p -> next -> next && p -> next -> val == p -> next -> next -> val){
+                tag = true;
+                p -> next -> next = p -> next -> next -> next;
+            }
+            if(tag) {
+                p -> next = p -> next -> next;
+            }
+            else{
+                p = p -> next;
+            }
+        }
+        return dummyhead -> next;
+    }
+};
+
+
+
+
 
 int main(int argc, char* argv[]) {
 

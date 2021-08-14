@@ -11,7 +11,6 @@ struct ListNode {
     ListNode(int x):val(x),next(nullptr) {}
 };
 
-
 class Solution {
 public:
     /**
@@ -30,7 +29,7 @@ public:
         ListNode* evenhead = even;
 
 
-        while(even != NULL & even->next != NULL) {
+        while(even != NULL && even->next != NULL) {
             odd->next  = odd->next->next;
             even->next = even->next->next;
             odd = odd->next;

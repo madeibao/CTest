@@ -18,7 +18,6 @@ public:
         }
     }
 
-
     int findpos(vector<int>&a,int low,int high) {
 
     	// 首先是临时的变量值。

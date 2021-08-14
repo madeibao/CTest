@@ -10,7 +10,6 @@ using namespace std;
     ListNode(int v):val(v),next(nullptr){}
  };
 
-
 class Solution {
 public:
     /**

@@ -10,7 +10,6 @@ struct ListNode {
 };
 
 class Solution {
-
     public:
     ListNode* reverseList(ListNode* head) {
         ListNode *temp = nullptr;

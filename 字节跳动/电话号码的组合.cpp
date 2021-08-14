@@ -1,15 +1,12 @@
 
 
-
-
 #include<iostream>
 #include<bits/stdc++.h>
 
 using namespace std;
 
 class Solution {
-
-
+    
 public:
     vector<string> backTrace(string str) {
         if(str.size()==0) {

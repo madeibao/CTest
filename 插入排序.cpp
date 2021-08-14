@@ -1,32 +1,33 @@
 
-
 #include<iostream>
 #include<bits/stdc++.h>
 
 using namespace std;
 
-void insertSort(vector<int>& res) {
+void insertSort(vector<int> &a) {
+	for (unsigned int i = 1; i < a.size(); i++) {
 
-	for(int i=0;i<res.size();i++) {
-		int index = res[i];
-		for(int j=i+1;j<res.size();j++) {
-			if(res[j]<res[index]) {
-				swap(res[j],res[index]);
-			}
+		// 下标从0开始的值
+		for (unsigned int j = i - 1; j >= 0 && a[j + 1] < a[j]; j--) {
+			// 两个内容来交换
+			swap(a[j], a[j + 1]);
 		}
 	}
-	return res;
 }
+
+
 int main(int argc, char *argv[]) {
 
 	vector<int> res {2,3,3,4,3,4,3,4,9,10,23,4};
 	insertSort(res);
 
-	for(int i=0;i<res.size();i++) {
-
-		cont<<res[i]<<" ";
+	for(unsigned int i=0;i<res.size();i++) {
+        cout<<res[i]<<" ";
 	}
+	cout<<endl;
 	return 0;
-
-
 }
+
+
+
+

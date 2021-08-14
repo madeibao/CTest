@@ -16,7 +16,6 @@ public:
     		ans[c-'a']++;
     	}
 
-
     	for(char c:s) {
     		if(ans[c-'a'] ==1) {
     			return c;

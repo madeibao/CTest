@@ -4,7 +4,6 @@
 using namespace std;
 
 struct ListNode {
-
 	int val;
 	ListNode *next;
 	ListNode(int x):val(x),next(nullptr){}
@@ -28,6 +27,8 @@ public:
 			cur = cur->next;
 		}
 
+
+		// 删除节点内容
 		pre->next = cur->next;
 		return dummy->next;
 	}

@@ -19,7 +19,7 @@ public:
 			return root;
 		}
 
-		TreeNode* left = ancestor(root->left, p,q);
+		TreeNode* left = ancestor(root->left,p,q);
 		TreeNode* right = ancestor(root->right,p,q);
 
 		if(left&&right) {
