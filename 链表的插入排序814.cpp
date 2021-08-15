@@ -16,7 +16,6 @@ class Solution  {
 	public:
 		ListNode* insertSort(ListNode* head) {
 
-
 			// 首先是生成一个节点
 			ListNode* dummy = new ListNode(-1);
 			dummy->next = head;

@@ -26,7 +26,8 @@ public:
     		slow= slow->next;
     	}
 
-    	ListNode* res= slow;
+    	ListNode* res= slow->next;
+        slow->next= nullptr;
     	return res;
     }
 };

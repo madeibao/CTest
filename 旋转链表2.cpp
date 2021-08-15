@@ -16,7 +16,7 @@ public:
             n++;
         }
         k = k%n;
-        ListNode* fast=  head, *slow = head;
+        ListNode* fast= head, *slow = head;
 
         // 链表的指针向右面移动
         while(k--) {

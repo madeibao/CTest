@@ -1,5 +1,4 @@
 
-
 #include<iostream>
 #include<bits/stdc++.h>
 
@@ -20,8 +19,6 @@ public:
         return ans;
     }
 };
-
-
 
 int main(int argc, char** argv) {
 

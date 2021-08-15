@@ -25,8 +25,7 @@ public:
  		right = res->next;
 
  		// 断链的操作，
- 		res->next = nullptr;
- 		
+        res->next = nullptr;
  		// 将右面的内容来进行逆置操作。
     	ListNode *res2 = reverse(right);
     	merge(left, res2);
