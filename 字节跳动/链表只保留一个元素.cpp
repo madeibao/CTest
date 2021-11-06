@@ -11,14 +11,6 @@ struct ListNode {
 };
 
 
-
-/**
- * struct ListNode {
- *	int val;
- *	struct ListNode *next;
- * };
- */
-
 class Solution {
 public:
     /**

@@ -1,7 +1,6 @@
 
 
 /**
- * 
  * 首先是选择比较大的数字，然后确保数字是整个数组中的唯一出现的数字。
  * 
  */
@@ -13,7 +12,6 @@
 using namespace std;
 
 class Solution {
-
     public:
         int largestUniqueNumber(vector<int>& A) {
             unordered_map<int,int> dict;

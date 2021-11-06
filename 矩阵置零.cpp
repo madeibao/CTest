@@ -10,21 +10,21 @@ public:
         int m=matrix.size();
         int n=matrix[0].size();
         vector<bool>pox(m),poy(n);
-        for(int i=0;i<m;i++){
+        for(int i=0;i<m;i++) {
             pox[i]=false;
         }
-        for(int i=0;i<n;i++){
+        for(int i=0;i<n;i++) {
             poy[i]=false;
         }
-        for(int i=0;i<m;i++){
-            for(int j=0;j<n;j++){
-                if(matrix[i][j]==0){
+        for(int i=0;i<m;i++) {
+            for(int j=0;j<n;j++) {
+                if(matrix[i][j]==0) {
                     pox[i]=true;
                     poy[j]=true;
                 }
             }
         }
-        for(int i=0;i<m;i++){
+        for(int i=0;i<m;i++) {
             if(pox[i]){
                 for(int j=0;j<n;j++){
                     matrix[i][j]=0;

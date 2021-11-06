@@ -9,8 +9,8 @@ using namespace std;
 
 // 最大的节点的值。
 
-const int maxn=1001;
-int parent[maxn]={0};
+const int maxn =  1001;
+int parent[maxn] =  {0};
 
 int findRoot(int x) {
    if(x==parent[x]) {

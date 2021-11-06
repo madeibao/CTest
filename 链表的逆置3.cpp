@@ -24,9 +24,7 @@ public:
     		pre = pHead;
     		pHead = temp;
     	}
-
     	return pre;
-
     }
 };
 

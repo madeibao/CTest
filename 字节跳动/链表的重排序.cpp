@@ -1,4 +1,6 @@
 
+// 归并算法来实现链表的排序。
+// 链表的归并算法。
 
 #include<iostream>
 #include<bits/stdc++.h>

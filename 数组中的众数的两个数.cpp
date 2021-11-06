@@ -17,8 +17,6 @@ public:
 
         for(int num:nums) {
 
-
-
             if(num==a){
                 cnta ++;
             }
@@ -45,12 +43,12 @@ public:
             if(num==a) {
                 cnta++;
             }
-            else if (num==b){
+            else if (num==b) {
                 cntb ++;
             }
         }
 
-        if(cnta>size/3){
+        if(cnta>size/3) {
             res.push_back(a);
         }
         if(cntb>size/3) {
@@ -60,7 +58,9 @@ public:
     }
 
 };
-int main(){
+
+
+int main() {
     Solution s;
     vector<int> temp = { 1,1,1,3,3,2,2,2};
     vector<int> temp2 = s.majorityElement(temp);

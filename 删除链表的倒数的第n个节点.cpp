@@ -1,5 +1,4 @@
 
-
 #include "iostream"
 #include "bits/stdc++.h"
 
@@ -30,6 +29,7 @@ public:
         return head;
     }
 };
+
 
 int main(int argc, char**argv) {
 

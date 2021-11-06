@@ -1,10 +1,8 @@
 
-
 #include<iostream>
 #include<bits/stdc++.h>
 
 using namespace std;
-
 
 class Solution {
 public:
@@ -21,6 +19,7 @@ public:
         return res;
     }
 };
+
 
 int main(int argc, char* argv[]) {	
 	vector<string> temp = {"eat", "tea", "tan", "ate", "nat", "bat"};

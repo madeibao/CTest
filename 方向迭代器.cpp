@@ -1,6 +1,8 @@
 
 
-/**
+
+
+
 #include<iostream>
 #include<algorithm>
 using namespace std;
@@ -11,8 +13,5 @@ int main() {
     cout<<s2<<endl;
     return 0;
 }
-*/
-
-
 
 

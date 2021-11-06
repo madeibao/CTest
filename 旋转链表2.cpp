@@ -1,5 +1,4 @@
 
-
 #include"iostream"
 #include"bits/stdc++.h"
 
@@ -33,10 +32,8 @@ public:
         slow->next = nullptr;
 
         return head;
-
     }
 }
-
 
 int main(int argc, char*argv[]) {
     ListNode *head = new ListNode(1);
