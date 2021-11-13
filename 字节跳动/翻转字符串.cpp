@@ -14,6 +14,7 @@ public:
      */
     string solve(string str) {
         // write code here
+        // reverse 是内置函数
         reverse(str.begin(),str.end());
         return str;
     }
