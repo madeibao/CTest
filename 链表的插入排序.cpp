@@ -47,7 +47,7 @@ public:
 };
 
 
-int main(int argc, char* argv[]){
+int main(int argc, char* argv[]) {
 
 	ListNode *head = new ListNode(1);
 	ListNode *h2 = new ListNode(4);
