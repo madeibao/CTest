@@ -9,10 +9,10 @@ using namespace std;
 class Solution {
 public:
     int reverse(int x) {
-        if(x/10 == 0) return x; //Æ½·²Çé¿ö£ºÈôx¡Ê[-9,9]£¬ÔòÖ±½Ó·µ»ØÆä±¾Éí
+        if(x/10 == 0) return x; //å¹³å‡¡æƒ…å†µï¼šè‹¥xâˆˆ[-9,9]ï¼Œåˆ™ç›´æŽ¥è¿”å›žå…¶æœ¬èº«
         int y = 0;
         while(x) {
-            if(y > INT_MAX/10 || y < INT_MIN/10) //Òç³ö
+            if(y > INT_MAX/10 || y < INT_MIN/10) //æº¢å‡º
                 return 0;
             y = y*10+x%10;
             x /=10;

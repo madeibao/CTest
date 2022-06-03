@@ -27,6 +27,7 @@ public:
 		return sum + left + right;
 	}
 };
+
 int main(int argc, char *argv[]) {
 	TreeNode *root = new TreeNode(1);
     TreeNode *left = new TreeNode(2);

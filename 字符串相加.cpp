@@ -35,6 +35,10 @@ public:
 
 int main(int argc, char**argv) {
 
+	string stra = "123";
+	string strb = "234";
+	Solution s;
 
+	cout<<s.addStrings(stra,strb);
     return 0;
 }

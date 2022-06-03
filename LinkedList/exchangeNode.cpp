@@ -1,6 +1,6 @@
 
 
-// k 个一组来进行链表的翻转。
+// 链表的两个两个交换
 
 #include<iostream>
 #include<bits/stdc++.h>
@@ -16,14 +16,27 @@ struct ListNode {
 };
 
 
-    // 链表的遍历
-    while(res!=nullptr) {
-        cout<<res->val<<" ";
-        res =res->next;
-    }
+class Solution {
+public:
+	ListNode* exchange(ListNode* head) {
+
+		if(head==nullptr||head->next==nullptr) {
+			return head;
+		}
+
+		ListNode* temp = head->next;
+		ListNode* node = exchange(temp->next);
+		head->next = node;
+		temp->next = head;
+
+		return temp;
+
+	}
+};
 
 
-int main(int argc, char** argv) {
+
+int main(int argc, char ** argv) {
 
     ListNode* head = new ListNode(1);
     ListNode* n2 = new ListNode(2);
@@ -43,7 +56,7 @@ int main(int argc, char** argv) {
     int k(2);
 
     Solution s;
-    ListNode * res = s.reverseKGroup(n1, k);
+    ListNode * res = s.exchange(head);
     while(res!=nullptr) {
         cout<<res->val<<" ";
         res =res->next;
@@ -51,4 +64,3 @@ int main(int argc, char** argv) {
     return 0;
 
 }
-

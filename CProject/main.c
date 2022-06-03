@@ -1,35 +1,50 @@
 
 
-#include<iostream>
-#include<stdio.h>
-#include<bits/stdc++.h>
+
+#include "iostream"
+#include "bits/stdc++.h"
 
 using namespace std;
 
 
-int main(int argc, char** argv) {
+class Solution {
+public:
+    vector<vector<string>> groupAnagrams(vector<string>& strs) {
 
-	signed char c = 0xFFFE;
-	printf("%d\n",c--);
+    	vector<vector<string>> res;
+    	unordered_map<string, vector<string>> map2;
+
+
+    	for(auto str:strs) {
+    		vector<string> vec;
+    		string temp = sort(str.begin(), str.end());
+    		vec.push_back(temp);
+    		map2.insert(str, vec);
+    	}
+
+    	for(auto j:map2) {
+    		res.push_back(j->second);
+    	}
+
+    	return res;
+
+    }
+};
+
+
+int main(int argc, char* argv[]) {
+
+
+	vector<string> res = {"eat", "tea", "tan", "ate", "nat", "bat"};
+	Solution s;
+	vector<vector<string>> res2;
+	res2 = s.groupAnagrams(res);
+	for(auto i:res2) {
+		for(auto j:i) {
+			cout<<j<<" ";
+		}
+		cout<<endl;
+	}
+
 	return 0;
 }
-
-/**
-	由于c的内存会溢出
-	只会取后面的8位
-
-	即
-	11111110
-
-	计算机内存中补码表示
-	补码取反加一
-
-	取反，第一位位符号位，忽略
-	10000001
-
-	加一
-	10000010
-
-	则输出结果位-2
-
-*/
