@@ -25,7 +25,6 @@ class Solution {
 			}
 			helper("",res, node);
 			return res;
-
 		}
 
 		void helper(string str, vector<string>& vec, TreeNode* root) {
