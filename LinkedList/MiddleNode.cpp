@@ -1,6 +1,6 @@
 
 
-// Á´±íµÄÖÐ¼ä½Úµã
+// é“¾è¡¨çš„ä¸­é—´èŠ‚ç‚¹
 
 #include<iostream>
 #include<bits/stdc++.h>
@@ -15,9 +15,9 @@ struct ListNode {
     ListNode(int x, ListNode* next): val(x), next(nullptr) {}
 };
 
-
+	
 /**
-	Ôòslow´ËÊ±ÎªÁ´±íµÄÖÐ¼ä½Úµã,´ËÊ±µ±Á´±í³¤¶ÈÎªÅ¼ÊýÊ±£¬slowÖ¸ÕëÖ¸ÏòÖÐ¼äÁ½¸ö½ÚµãÖÐµÄ¿¿ºó½Úµã
+	åˆ™slowæ­¤æ—¶ä¸ºé“¾è¡¨çš„ä¸­é—´èŠ‚ç‚¹,æ­¤æ—¶å½“é“¾è¡¨é•¿åº¦ä¸ºå¶æ•°æ—¶ï¼ŒslowæŒ‡é’ˆæŒ‡å‘ä¸­é—´ä¸¤ä¸ªèŠ‚ç‚¹ä¸­çš„é åŽèŠ‚ç‚¹
 */
 
 ListNode* split(ListNode* head) {
@@ -30,14 +30,13 @@ ListNode* split(ListNode* head) {
 	return slow;
 }
 
-// ÈôÊÇÈÃfastÖ¸ÕëÖ¸ÏòÍ·½Úµãhead->next,´ËÊ±µ±Á´±í³¤¶ÈÎªÅ¼ÊýÊ±Ö¸ÏòÁ´±íÖÐ¼ä½Úµã¿¿Ç°ÄÇ¸ö
+// è‹¥æ˜¯è®©fastæŒ‡é’ˆæŒ‡å‘å¤´èŠ‚ç‚¹head->next,æ­¤æ—¶å½“é“¾è¡¨é•¿åº¦ä¸ºå¶æ•°æ—¶æŒ‡å‘é“¾è¡¨ä¸­é—´èŠ‚ç‚¹é å‰é‚£ä¸ª
 ListNode* split2(ListNode* head) {
 	ListNode*fast=head->next,*slow=head;
-	while(fast!=NULL&&fast->next!=NULL) {
+	while(fast!=NULL&&fast->next!=NULL) { 
 	  fast=fast->next->next;
 	  slow=slow->next;
 	}
-    return slow;
 }
 
 

@@ -26,18 +26,23 @@ public:
         return res;
     }
 
- 	void dfs(vector<vector<char>>& grid, int x, int y){
-        if(grid[x][y] == '0') return;
-        grid[x][y] = '0';
-        if(x > 0) dfs(grid, x - 1, y);
-        if(x < grid.size()-1) dfs(grid, x + 1, y);
-        if(y > 0) dfs(grid, x, y - 1);
-        if(y < grid[0].size()-1)dfs(grid, x, y + 1);
- 	}
-};
-};
-};
+    void dfs(vector<vector<char>>& grid, int x, int y) {
 
+        int m = grid.size();
+        int n = grid[0].size();
+        if(x<0||x>m||y<0||y>m||grid[i][j]='0') {
+        	return;
+        }
+        grid[i][j] = '0';
+
+        dfs(grid, i-1,j);
+        dfs(grid, i+1,j);
+        dfs(grid, i,j-1);
+        dfs(grid, i,j+1);
+
+    }
+
+};
 
 int main(int argc, char** argv) {
 

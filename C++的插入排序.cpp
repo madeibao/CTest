@@ -2,8 +2,6 @@
 
 #include<bits/stdc++.h>
 #include<iostream>
-
-
 using namespace std;
 template<class T>
 void selectSort(T nums[], int n) {
