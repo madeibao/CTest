@@ -1,27 +1,41 @@
 
-#include <iostream>
-#include <bits/stdc++.h>
+
+
+//-----------------------------------------------------------------------------
+// 第一个唯一字符
+
+
+#include "iostream"
+#include<bits/stdc++.h>
 
 using namespace std;
 
 class Solution {
 public:
-    int countSegments(string s) {
-        int ans = 0;
+    char findTheDifference(string s, string t) {
+        int n = max(s.size(),t.size());
+        char res= ' ';
+            for(int i=0;i<t.size();i++) {
+                if(t.find(t[i])!=nullptr&&s.find(t[i])!=nullptr ) {
+                    continue;
+                }
+                else {
+                    res = t[i];
+                }
+            }
+                    return res;
+        }
 
-        //
-        s += ' ';
-        for (int i = 1; i < s.size(); i++)
-            if (s[i] == ' ' && s[i - 1] != ' ') ans++;
-        return ans;
-    }
+
 };
 
+int main() {
 
-int main(int argc, char** argv) {
+	Solution s2;
+    string s = "abcd", t = "abcde";
 
-    string str = "Hello, my name is John";
-    Solution s;
-    cout<<s.countSegments(str)<<endl;
-    return 0;
+    cout<<s2.findTheDifference(s,t)<<endl;
+	return 0;
+
 }
+
