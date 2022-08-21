@@ -1,41 +1,35 @@
 
 
-
-//-----------------------------------------------------------------------------
-// 第一个唯一字符
-
-
 #include "iostream"
-#include<bits/stdc++.h>
+#include "bits/stdc++.h"
 
 using namespace std;
 
 class Solution {
 public:
-    char findTheDifference(string s, string t) {
-        int n = max(s.size(),t.size());
-        char res= ' ';
-            for(int i=0;i<t.size();i++) {
-                if(t.find(t[i])!=nullptr&&s.find(t[i])!=nullptr ) {
-                    continue;
-                }
-                else {
-                    res = t[i];
-                }
-            }
-                    return res;
+    int maxScore(string s) {
+        int zero = 0,one = 0;
+        for(char c : s) {
+            if(c == '1') one ++;
         }
 
-
+        int res = INT_MIN;
+        for(int i=0;i<s.length()-1;i++) {
+            if(s[i] == '0') {
+                zero ++;
+            }else if(s[i] == '1') {
+                one --;
+            }
+            res = max(res,one+zero);
+        }
+        return res;
+    }
 };
 
-int main() {
+int main(int argc, char** argv) {
 
-	Solution s2;
-    string s = "abcd", t = "abcde";
-
-    cout<<s2.findTheDifference(s,t)<<endl;
+	string str = "011101";
+	Solution s;
+	cout <<s.maxScore(str)<<endl;
 	return 0;
-
 }
-
