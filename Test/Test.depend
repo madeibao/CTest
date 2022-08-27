@@ -1,7 +1,6 @@
 # depslib dependency file v1.0
-1660462793 source:e:\ccworkspace\test\main.cpp
-	"iostream"
-	"bits/stdc++.h"
+1661589816 source:e:\ccworkspace\test\main.cpp
+	<iostream>
 
 1625044926 source:e:\ccworkspace\test\所有文件头文件2.cpp
 	<iostream>

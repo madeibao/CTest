@@ -1,35 +1,22 @@
-
-
-#include "iostream"
-#include "bits/stdc++.h"
+#include <iostream>
 
 using namespace std;
 
-class Solution {
-public:
-    int maxScore(string s) {
-        int zero = 0,one = 0;
-        for(char c : s) {
-            if(c == '1') one ++;
-        }
+int main()
+{
+    int i;
+    char str[] = "hello world";
+    char sss[] = "goood jobbb";
+    char * const ptr = str;
 
-        int res = INT_MIN;
-        for(int i=0;i<s.length()-1;i++) {
-            if(s[i] == '0') {
-                zero ++;
-            }else if(s[i] == '1') {
-                one --;
-            }
-            res = max(res,one+zero);
-        }
-        return res;
-    }
-};
+    for(i=0; i<11; i++)
+        cout << ptr[i];
+    cout << endl;
 
-int main(int argc, char** argv) {
+    ptr[0] = 's';
+    for(i=0; i<11; i++)
+        cout << ptr[i];
+    cout << endl;
 
-	string str = "011101";
-	Solution s;
-	cout <<s.maxScore(str)<<endl;
-	return 0;
+    //ptr = sss;  报错，提示ptr为只读对象
 }

@@ -1,4 +1,3 @@
-// 使用泛型来实现C++的编程。
 
 #include<bits/stdc++.h>
 #include<iostream>
