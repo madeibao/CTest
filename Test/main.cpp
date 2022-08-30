@@ -1,22 +1,34 @@
-#include <iostream>
+
+
+
+
+#include "iostream"
+#include "bits/stdc++.h"
 
 using namespace std;
 
-int main()
-{
-    int i;
-    char str[] = "hello world";
-    char sss[] = "goood jobbb";
-    char * const ptr = str;
+class Solution {
+	public:
+		int removeElement(vector<int>& nums, int val) {
 
-    for(i=0; i<11; i++)
-        cout << ptr[i];
-    cout << endl;
+			int fast=0,slow=0;
+			while(fast<nums.size()) {
+				if(nums[fast]!=val) {
+					nums[slow++]=nums[fast];
+				}
+                fast++;
+			}
 
-    ptr[0] = 's';
-    for(i=0; i<11; i++)
-        cout << ptr[i];
-    cout << endl;
+			return slow;
+		}
+};
 
-    //ptr = sss;  报错，提示ptr为只读对象
+
+int main() {
+
+	vector<int> nums = {2,3,3,3,2};
+	int num = 2;
+	Solution s;
+	cout<<s.removeElement(nums, num)<<endl;
+	return 0;
 }
