@@ -17,13 +17,13 @@ public:
     }
 
     void helper(vector<string>& res, string temp, int left, int right) {
-    	if(left<0||right<0||left>right) {
+    	if(left<0&&right<0) {
     		return;
     	}
     	if(left==0&&right==0) {
     		res.push_back(temp);
     	}
-    	helper(res, temp+"(",left-1,right);
+    	helper(res, temp+")",left-1,right);
     	helper(res, temp+")",left,right-1);
     }
 };
