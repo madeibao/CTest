@@ -21,7 +21,9 @@ int findFather2(int x)
 
 
 
-*/int findFather2(int x)
+*/
+
+int findFather2(int x)
 {
 	int a = x;				//由于最后x要变成它的根节点的值，所以先备份它
 	while (x != findFather(x))		
