@@ -9,6 +9,8 @@ class Solution {
 public:
         vector<int> fathers;
 
+
+        // 初始算法
 		int find(int i) {
 			while (fathers[i]!=i) {
 				i = fathers[i];
@@ -16,10 +18,36 @@ public:
 			return i;
 		}
 
+		// 优化算法
+		int find2(int i) {
+
+			int a = i;
+			while (fathers[i]!=i) {
+				i = fathers[i];
+			}
+
+			while (a!=fathers[a]) {
+				int b = a;
+				a = fathers[a];
+				fathers[b] = i;
+			}
+			return i;
+		}
+
+		// 优化算法
+		int find3(int v) {
+		  if (fathers[v] != v ) {
+		    // v 元素指向根节点
+		    fathers[v] = find(fathers[v]); 
+		  }
+		  return fathers[v];
+		}
+
+
 		void uni(int i, int j) {
 
-			int f1 = find(i);
-			int f2 = find(j);
+			int f1 = find3(i);
+			int f2 = find3(j);
 			fathers[f2] = f1;
 		}
 
