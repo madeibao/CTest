@@ -31,6 +31,8 @@ public:
         	B[b]+=B[a];
         }
     }
+
+
     int minCostConnectPoints(vector<vector<int>>& points) {
         int n = points.size();
         vector<dis> nums;
@@ -48,7 +50,9 @@ public:
         sort(nums.begin(), nums.end());
         int res = 0;
         for(auto& num:nums) {
-            if(find(num.a)==find(num.b)) continue;
+            if(find(num.a)==find(num.b)) {
+            	continue;
+            }
             res += num.d;
             join(num.a, num.b);
         }
