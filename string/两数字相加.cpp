@@ -20,7 +20,6 @@ public:
 
 		while (i>=0||j>=0) {
 
-			int a = i>=0?num1[i--]- '0':0;
 			int b = j>=0?num2[j--]- '0':0;
 
 			int temp =a+b+carry;

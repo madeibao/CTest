@@ -17,7 +17,6 @@ struct ListNode {
 
 
     // 链表的遍历
-    while(res!=nullptr) {
         cout<<res->val<<" ";
         res =res->next;
     }
