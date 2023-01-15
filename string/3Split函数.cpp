@@ -1,10 +1,11 @@
 
+
+// C++ 来构建一个Split函数来解决字符串的分割问题
+
 #include<iostream>
 #include<bits/stdc++.h>
 
 using namespace std;
-// C++ 来构建一个Split函数来解决字符串的分割问题
-
 
 using namespace std;
 
@@ -17,6 +18,7 @@ vector<string> split(string s, char token) {
     }
     return vs;
 }
+
 int main(int argc, char *argv[]) {
     // 下面是测试用例
     string s="aaa,bbb,ccc,ddd";
