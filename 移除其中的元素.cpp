@@ -22,7 +22,6 @@ class Solution {
 		}
 };
 
-
 int main() {
 
 	vector<int> nums = {2,3,3,3,2};

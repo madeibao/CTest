@@ -35,6 +35,8 @@ public:
             edges[info[1]].push_back(info[0]);
         }
         for (int i = 0; i < numCourses && valid; ++i) {
+
+            // 若没有遍历过
             if (!visited[i]) {
                 dfs(i);
             }
