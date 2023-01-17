@@ -16,6 +16,9 @@ int main(){
 
 
 /**
+        Linux  ./a.out | c++filt -t
+        
+        
         bool:                     b
          
         char:                     c
