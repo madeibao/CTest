@@ -15,7 +15,7 @@ int main(int argc, char** argv) {
 
 	v.resize(len);
 
-	cout<<"the first value of V i "<<endl;
+	cout<<"the first value of V "<<v[0]<<endl;
 	for(int i=0;i<v.size();i++) {
 		cout<<v[i]<<" ";
 	}
