@@ -5,9 +5,6 @@
 using namespace std;
 // C++ 来构建一个Split函数来解决字符串的分割问题
 
-
-using namespace std;
-
 vector<string> split(string s, char token) {
     stringstream iss(s);
     string word;

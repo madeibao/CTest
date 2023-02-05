@@ -49,30 +49,29 @@ void delet(Linklist*list,int n)//删除链表中的值
 {
     Linklist *t=list,*in;
     int i=0;
-    while(i<n&&t!=NULL)
-    {
+    while(i<n&&t!=NULL) {
         in=t;//in指向的一直是现在t所指向的上一个（先让in指向t，再让t指向下一个）
         t=t->next;
         i++;
     }
-    if(t!=NULL)
-    {
+    if(t!=NULL) {
         in->next=t->next;//要删除t，让指向它的指针指向下一个，跳过t就是删除了t；
         free(t);//清除t的内存；
     }
-    else puts("节点不存在！请以后再来探索吧");
+    else {
+    	puts("节点不存在！请以后再来探索吧");
+    }
 }
 void insert (Linklist*list,int n)//插入链表    （在第n位之后插入值（插完之后是第n+1位））
 {
     Linklist*t=list,*in;
     int i=0;
-    while(i<n&&t!=NULL)
-    {
+    while(i<n&&t!=NULL) {
         t=t->next;//先找到要插入的位置
         i++;
     }
-    if(t!=NULL)
-    {
+
+    if(t!=NULL) {
         in=(Linklist*)malloc(sizeof(Linklist));
         puts("请输入要插入的值：");
         scanf("%d",&in->score);
@@ -80,19 +79,22 @@ void insert (Linklist*list,int n)//插入链表    （在第n位之后插入值�
         t->next=in;
         puts("插进去了呢");
     }
-    else puts("节点不存在，你别玩我呀");
+    else {
+    	puts("节点不存在，你别玩我呀");
+    } 
 }
 void coutlist(Linklist*head)//输出链表的值；
 {
-    while(head->next!=NULL)
-    {
+    while(head->next!=NULL) {
         head=head->next;
         printf("%d ",head->score);
     }
     printf("\n");
 }
-void coutlength(Linklist*list)//输出链表的长度（带头结点）
-{
+
+// 输出链表的长度（带头结点）
+// 统计链表的长度
+void coutlength(Linklist*list) {
     Linklist*t=list;//非空表的情况下指向的是第一个结点而不是头结点
     int ans=0;
     while(t->next)

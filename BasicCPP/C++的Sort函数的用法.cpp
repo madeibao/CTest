@@ -6,8 +6,6 @@
 // （2）第二个是结束的地址（最后一位要排序的地址）
 // （3）第三个参数是排序的方法，可以是从大到小也可是从小到大，还可以不写第三个参数，此时默认的排序方法是从小到大排序。
 
-
-
 #include<iostream>
 #include<algorithm>
 
@@ -22,5 +20,37 @@ int main() {
     return 0;
 }
 
+//------------------------------------------------------------------------------
 
+
+#include<iostream>
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+
+    vector<int> nums {2,3,3,1};
+    sort(nums.begin(),nums.end());
+    for(auto i:nums) {
+        cout<<i<<endl;
+    }
+    return 0;
+}
+
+//------------------------------------------------------------------------------------------
+#include<iostream>
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+
+    vector<int> nums {2,3,3,1};
+    sort(nums.rbegin(),nums.rend());
+    for(auto i:nums) {
+        cout<<i<<endl;
+    }
+    return 0;
+}
 
