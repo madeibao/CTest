@@ -11,7 +11,7 @@ int main()
 
 	char *p1 = p;//等同于*p1 = a;
 	p1 += len -1;
-	if(p<p1)
+	while(p<p1)
 	{
 		char tmp = *p;//值交换
 		*p = *p1;
