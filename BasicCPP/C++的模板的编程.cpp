@@ -5,6 +5,7 @@
 using namespace std;
 // template <typename T>
 template<class T>
+
 void select(T nums[], int n) {
 
 	for(int i=0; i<n;i++) {
@@ -21,7 +22,8 @@ void select(T nums[], int n) {
 
 int main(int argc, char* argv[]) {
 	int nums[] ={2,23,3,3,3,45,65,5,6,};
-	select(nums,sizeof(nums)/sizeof(nums[0]));
+	float nums2[] = {22.2,34.2,12.3,99.22,99.23};
+	select(nums2,sizeof(nums)/sizeof(nums[0]));
 
 	for(auto i:nums) {
 		cout<<i<<endl;
