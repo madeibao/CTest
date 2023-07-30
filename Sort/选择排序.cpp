@@ -21,8 +21,9 @@ void select_sort(int a[], int n) {
 
         //若min!=i，则交换 a[i] 和 a[min]。
         //交换后，保证了a[0]..a[i]之间元素有序。
-        if(min != i)
+        if(min != i) {
             swap(a[i], a[min]);
+        }
     }
 }
 

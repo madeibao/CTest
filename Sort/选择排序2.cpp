@@ -19,9 +19,13 @@ void selectSort(int a[], int len) {
 				minindex = j;
 		
 		}
-		temp = a[i];
-		a[i] = a[minindex];
-		a[minindex] = temp;
+        
+        {
+            temp = a[i];
+            a[i] = a[minindex];
+            a[minindex] = temp;
+        }
+
 	}
 }
  

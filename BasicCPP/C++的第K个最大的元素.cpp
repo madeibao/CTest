@@ -22,8 +22,8 @@ public:
 			}
 		}
 
-		result = store.top();
-		return result;
+        res = store.top();
+		return res;
 	}
 };
 
