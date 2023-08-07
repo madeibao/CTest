@@ -1,23 +1,19 @@
 
-
-
-
  #include<iostream>
  #include<bits/stdc++.h>
 
  using namespace std;
 
  struct TreeNode {
-
     int val;
     TreeNode* left;
     TreeNode* right;
     TreeNode(int v):val(v),left(nullptr),right(nullptr){}
  };
+
 class Solution {
 public:
     /**
-     *
      * @param root TreeNode类
      * @return int整型
      */
@@ -30,9 +26,7 @@ public:
     }
 };
 
-
 int main(int argc, char** argv) {
-
 
 	TreeNode* n1 = new TreeNode(1);
 	TreeNode* n2 = new TreeNode(2);

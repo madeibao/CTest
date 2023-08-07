@@ -5,7 +5,6 @@
 
 using namespace std;
 
-
 class Solution {
 	public:
 		int titleToNumber(strin s) {
@@ -17,8 +16,8 @@ class Solution {
 			}
 			return ans;
 		}
-
 };
+
 int main(int argc, char* argv[]) {
 
 	Solution s;
