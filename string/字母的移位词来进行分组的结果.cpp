@@ -28,7 +28,7 @@ int main(int argc, char* argv[]) {
 	vector<vector<string>> res = s.groupAnagrams(temp);
 	for(auto it:res) {
 		for(auto i:it) {
-			cont<<i;
+			cout<<i;
 		}
 		cout<<endl;
 	}

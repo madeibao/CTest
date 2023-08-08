@@ -1,12 +1,12 @@
 
 
-
-
 #include<iostream>
 #include<bits/stdc++.h>
 
 using namespace std;
+
 const int N = 100;
+
 // 背包转换公式
 int maxValue(int n, int c, int*w, int* p) {
     int f[N][N];
