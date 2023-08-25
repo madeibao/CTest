@@ -27,6 +27,11 @@ public:
     		queue.push(*it);
     	}
 
+		// priority_queue<pair<int, int>, vector<pair<int, int>>, comp> pq;
+        // for(auto & count : counts) {
+        //     pq.push(count);
+        // }
+
         // 注意的是，res 一定要初始化，并且将初始化大小为k 
         vector<int> res(k);
     	for(int i=0;i<k;i++) {

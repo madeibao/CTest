@@ -16,7 +16,7 @@ public:
     bool backtrack(int i, int cw,int k, vector<int> &nums, vector<int> &help, int target){
         if(k == 0)   return true; //目标就是把size元素全装进去
         bool flag = false;
-        for(int j = i; j < nums.size(); ++j){
+        for(int j = i; j < nums.size(); ++j) {
             if(!help[j] && cw + nums[j] <= target){
                 help[j] = 1; //做出选择
                 if(cw+nums[j] == target)
