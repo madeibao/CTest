@@ -14,7 +14,7 @@ struct ListNode {
 
 // 打印链表
 void printNode(ListNode *head) {
-	while(head->next != nullptr) {
+	while(head!= nullptr) {
 		cout<<head->val<<"->";
 		head= head->next;
 	}

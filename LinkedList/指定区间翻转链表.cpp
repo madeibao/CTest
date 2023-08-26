@@ -1,5 +1,6 @@
 
 
+
 #include "iostream"
 #include "bits/stdc++.h"
 
@@ -13,24 +14,35 @@ struct ListNode {
     ListNode(int x, ListNode* next): val(x), next(nullptr) {}
 };
 
+
 class Solution {
 public:
-    ListNode* reverse(ListNode* head, ListNode* end) const {
+	ListNode* reverseBetween(ListNode* head, int left, int right) {
 
-        ListNode* node = head->next;
-        head->next = nullptr;
+		ListNode* dummy = new ListNode(-1);
+		ListNode* pre = dummy;
 
-        ListNode* pre = nullptr;
-        while(node!=nullptr&&head!=end) {
-            ListNode* temp = node->next;
-            node->next = pre;
-            pre = head;
-            head = temp;
-        }
+		dummy->next = head;
 
-        return head;
-    }
+		ListNode* curr = head;
+
+		for(int i=0;i<left-1;i++) {
+			pre = pre->next;
+			curr = curr->next;
+		}
+
+		for(int i=0;i<right-left;i++) {
+			ListNode* temp = curr->next;
+			curr->next = temp->next;
+			temp->next = pre->next;
+			pre->next = temp;
+		}
+
+		return dummy->next;
+	}
+
 };
+
 
 int main(int argc, char *argv[]) {
     ListNode *head = new ListNode(1);
@@ -53,7 +65,7 @@ int main(int argc, char *argv[]) {
 
     ListNode* res;
     Solution s2;
-    res = s2.reverse(head, n6);
+    res = s2.reverse(head, m, n);
     while (res!=nullptr) {
         cout<<res->val<<" ";
         res= res->next;

@@ -26,7 +26,7 @@ public:
 };
 
 int main(int argc, char** argv) {
-		ListNode* head = new ListNode(1);
+    ListNode* head = new ListNode(1);
     ListNode* n2 = new ListNode(2);
     ListNode* n3 = new ListNode(3);
     ListNode* n4 = new ListNode(4);

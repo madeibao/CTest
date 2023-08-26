@@ -13,9 +13,6 @@ typedef struct ListNode {
 	ListNode(int v):val(v),next(nullptr){};
 }ListNode;
 
-
-
-
 class Solution {
 public:
     bool isPalindrome(ListNode* head) {
@@ -35,7 +32,6 @@ public:
     		}
             stack.pop();
     		p = p->next;
-
     	}
 
     	return 1;
