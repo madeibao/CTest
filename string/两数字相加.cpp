@@ -10,7 +10,6 @@ class Solution {
 public:
     string addStrings(string num1, string num2) {
 
-	
 		int carry=0;
 
 		int i= num1.size()-1;
@@ -20,6 +19,7 @@ public:
 
 		while (i>=0||j>=0) {
 
+			int a = i>=0?num1[i--]- '0':0;
 			int b = j>=0?num2[j--]- '0':0;
 
 			int temp =a+b+carry;
@@ -44,6 +44,6 @@ int main(int argc, char** argv) {
 	string strb = "234";
 
 	Solution s;
-	cout<<s.add(stra,strb)<<endl;
+	cout<<s.addStrings(stra,strb)<<endl;
 	return 0;
 }

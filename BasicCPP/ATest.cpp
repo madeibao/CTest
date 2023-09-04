@@ -15,20 +15,17 @@ struct ListNode {
 
 class Solution {
 public:
-    ListNode* reverse(ListNode* head, ListNode* end) const {
+    ListNode* reverse(ListNode* head) const {    
 
-        ListNode* node = head->next;
-        head->next = nullptr;
+        ListNode* pre =nullptr;
 
-        ListNode* pre = nullptr;
-        while(node!=nullptr&&head!=end) {
-            ListNode* temp = node->next;
-            node->next = pre;
-            pre = head;
-            head = temp;
+        while(head) {
+
+            ListNode* temp = head->next;
+            
         }
 
-        return head;
+
     }
 };
 

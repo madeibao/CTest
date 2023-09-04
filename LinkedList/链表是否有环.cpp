@@ -11,7 +11,7 @@ struct ListNode {
     ListNode(int x):val(x),next(nullptr) {}
 };
 
-// 头插法来实现链表的翻转的操作。
+// 链表的快慢指针来判断环
 class Solution {
 public:
     bool hasCycle(ListNode *head) {

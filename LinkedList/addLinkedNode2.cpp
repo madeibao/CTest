@@ -46,5 +46,29 @@ public:
 
 int main() {
 
+    ListNode* head = new ListNode(1);
+    ListNode* n2 = new ListNode(2);
+    ListNode* n3 = new ListNode(3);
+
+    head->next = n2;
+    n2->next = n3;
+    n3->next = nullptr;
+
+
+    ListNode* nodea = new ListNode(2);
+    ListNode* nodeb = new ListNode(3);
+    ListNode* nodec = new ListNode(4);
+
+    nodea->next = nodeb;
+    nodeb->next = nodec;
+    nodec->next = nullptr;
+
+    Solution s2;
+    ListNode* res;
+    res = s2.addTwoNumbers(head,nodea);
+    while(res) {
+        cout<<res->val<<" ";
+        res = res->next;
+    }
     return 0;
 }

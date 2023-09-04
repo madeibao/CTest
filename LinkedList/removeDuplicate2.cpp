@@ -1,4 +1,8 @@
 
+
+
+
+
 #include "iostream"
 #include "bits/stdc++.h"
 
@@ -12,24 +16,28 @@ struct ListNode {
     ListNode(int x, ListNode* next): val(x), next(nullptr) {}
 };
 
+
 class Solution {
 public:
     ListNode* deleteDuplicates(ListNode* head) {
 
-        ListNode* cur = head;
-        while(cur!=nullptr&&cur->next!=nullptr) {
-            if(cur->val==cur->next->val) {
-                cur->next = cur->next->next;
-            }
-            else {
-                cur = cur->next;
-            }
-        }
+    	if(head==nullptr||head->next==nullptr) {
+    		return head;
+    	}
 
-        return head;
+    	if(head->next!=nullptr&&head->val==head->next->val) {
+    		while(head->val==head->next->val) {
+    			head = head->next;
+    		}
+    		return deleteDuplicates(head->next);
+    	}
+    	else {
+    		head->next = deleteDuplicates(head->next);
+    	}
+
+    	return head;
     }
 };
-
 
 int main(int argc, char *argv[]) {
 
@@ -38,13 +46,15 @@ int main(int argc, char *argv[]) {
     ListNode* n3 = new ListNode(2);
     ListNode* n4 = new ListNode(4);
     ListNode *n5 = new ListNode(4);
+    ListNode *n6 = new ListNode(3);
 
 
     n1->next = n2;
     n2->next = n3;
     n3->next = n4;
     n4->next = n5;
-    n5->next = nullptr;
+    n5->next = n6;
+    n6->next = nullptr;
 
 
     Solution s;

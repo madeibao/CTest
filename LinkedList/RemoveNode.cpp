@@ -1,4 +1,5 @@
 
+
 #include "iostream"
 #include "bits/stdc++.h"
 
@@ -14,20 +15,24 @@ struct ListNode {
 
 class Solution {
 public:
-    ListNode* deleteDuplicates(ListNode* head) {
+    ListNode* removeElements(ListNode* head, int val) {
+    	ListNode* dummy = new ListNode(-1);
+    	dummy->next = head;
 
-        ListNode* cur = head;
-        while(cur!=nullptr&&cur->next!=nullptr) {
-            if(cur->val==cur->next->val) {
-                cur->next = cur->next->next;
-            }
-            else {
-                cur = cur->next;
-            }
-        }
+    	ListNode* pre = dummy;
 
-        return head;
+    	while (pre->next!=nullptr) {
+    		if(pre->next->val==val) {
+    			pre->next = pre->next->next;
+    		}
+    		else {
+    			pre = pre->next;
+    		}
+    	}
+
+    	return dummy->next;
     }
+
 };
 
 
@@ -35,8 +40,8 @@ int main(int argc, char *argv[]) {
 
     ListNode* n1 = new ListNode(1);
     ListNode* n2 = new ListNode(2);
-    ListNode* n3 = new ListNode(2);
-    ListNode* n4 = new ListNode(4);
+    ListNode* n3 = new ListNode(3);
+    ListNode* n4 = new ListNode(6);
     ListNode *n5 = new ListNode(4);
 
 
@@ -46,9 +51,10 @@ int main(int argc, char *argv[]) {
     n4->next = n5;
     n5->next = nullptr;
 
+    int k = 6;
 
     Solution s;
-    ListNode * res = s.deleteDuplicates(n1);
+    ListNode * res = s.removeElements(n1, k);
     while(res!=nullptr) {
         cout<<res->val<<" ";
         res =res->next;
