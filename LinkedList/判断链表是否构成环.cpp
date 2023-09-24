@@ -1,7 +1,5 @@
 
 
-
-
 #include<iostream>
 #include<bits/stdc++.h>
 
@@ -28,7 +26,6 @@ public:
 		while(head!=nullptr&&head->next!=nullptr) {
 			fast =fast->next->next;
 			slow = slow->next;
-			i
 			if(fast==slow) {
 				return true;
 			}

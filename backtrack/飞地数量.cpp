@@ -6,7 +6,6 @@ using namespace std;
 
 class Solution {
 public:
-
     void isEnclaves(vector<vector<int>>& grid, int i, int j) {
         if (i < 0 || j < 0 || i >= grid.size() || j >= grid[0].size() || grid[i][j] == 0) {
             return;
@@ -50,7 +49,10 @@ public:
 
 int main(int argc, char** argv) {
 
-	vector<vector<int>> grid = {{0,0,0,0},{1,0,1,0},{0,1,1,0},{0,0,0,0}};
+	vector<vector<int>> grid = {{0,0,0,0},
+                                {1,0,1,0},
+                                {0,1,1,0},
+                                {0,0,0,0}};
 	Solution s2;
 	cout<<s2.numEnclaves(grid)<<endl;
 

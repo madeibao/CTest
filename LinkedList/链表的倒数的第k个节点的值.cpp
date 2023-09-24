@@ -9,7 +9,6 @@ struct ListNode {
     ListNode(int v):val(v){}
 };
 
-
 class Solution {
 public:
     int kthToLast(ListNode* head, int k) {
