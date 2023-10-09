@@ -16,7 +16,7 @@ public:
             if(s[i] == ' '){
                 ans += "%20";
             }
-            else{
+            else {
                 ans += s[i];
             }
         }

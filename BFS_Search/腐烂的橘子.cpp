@@ -10,7 +10,6 @@ public:
     int x,y;
     int orangesRotting(vector<vector<int>>& grid) {
 
-
         queue<pair<int,int>> que;
         int m = grid.size();
         int n = grid[0].size();
