@@ -19,3 +19,14 @@ int main(int argc, char** argv) {
 	cout << s << endl;
 	return 0;
 }
+
+
+
+// Java 内存模型
+
+// reenLock
+
+// Synchronized
+
+// Java 线程池
+
