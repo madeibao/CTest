@@ -10,10 +10,11 @@ public class IslandSurvival {
         List<Integer> left = new ArrayList<>();
  
         //先将左右方向的人区分
-        for (int i = 0; i < power.size(); i++){
-            if (power.get(i) > 0){
+        for (int i = 0; i < power.size(); i++) {
+            if (power.get(i) > 0) {
                 right.add(power.get(i));
-            }else {
+            }
+            else {
                 left.add(power.get(i));
             }
         }

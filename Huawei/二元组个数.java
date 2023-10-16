@@ -1,4 +1,8 @@
 
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
 
 public class My {
     public static void main(String[] args) {
@@ -13,10 +17,14 @@ public class My {
         //map key是数值，value对应数值出现的次数
         Map<Integer, Integer> map = new HashMap<>();
 
-        for (int key : aArray) {
-            Integer num = map.getOrDefault(key, 0);
-            num++;
-            map.put(key, num);
+//        for (int key : aArray) {
+//            Integer num = map.getOrDefault(key, 0);
+//            num++;
+//            map.put(key, num);
+//        }
+
+        for(int key:aArray) {
+            map.put(key,map.getOrDefault(key,0)+1);
         }
 
         int sum = 0;

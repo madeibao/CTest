@@ -1,7 +1,5 @@
 
 
-
-
 public class Solution {
     public String ReverseSentence(String str) {
         if (str == null || str.length() == 0) {
@@ -16,6 +14,8 @@ public class Solution {
         while (!stack.isEmpty()) {
             builder.append(stack.pop()).append(" ");
         }
+
+        // 去除左右的空格
         return builder.toString().trim();
     }
 
