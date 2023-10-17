@@ -1,5 +1,5 @@
 
-public class T2 {
+public class IP4Test {
 	public static void main(String[] args) {
 		String input2="128#168#100#5";
 		String input = "100#101#1#5";

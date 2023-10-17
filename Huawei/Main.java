@@ -5,13 +5,17 @@ public class Main {
 
     public String reverseParentheses(String s) {
         Stack<Character> stack = new Stack<>();
-        for(var c:s.toCharArray) {
+        for(var c:s.toCharArray()) {
             if(c==')') {
                 StringBuilder sb = new StringBuilder();
-                while(stack.peep()!='(') {
+                while(stack.peek()!='(') {
                     sb.append(stack.pop());
                 }
                 stack.pop();
+
+                for(var ch:sb.toString().toCharArray()) {
+                    stack.push(ch);
+                }
             }
             else {
                 stack.push(c);
@@ -22,8 +26,7 @@ public class Main {
         while(!stack.empty()) {
             result.append(stack.pop());
         }
-
-        return sb.reverse().toString();
+        return result.reverse().toString();
     }
 
     public static void main(String[] args) {

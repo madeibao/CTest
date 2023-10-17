@@ -1,5 +1,22 @@
 package com.AAAA.www;
 
+
+// 输入	iwdvpbn,hk,iuop,iikd,kadgpf
+// 输出	14
+// 说明	
+// 数组中有5个元素。
+
+// iwdvpbn与hk无相同的字符，满足条件，iwdvpbn的长度为7，hk的长度为2，乘积为14（7*2）。
+
+// iwdvpbn与iuop、iikd、kadgpf均有相同的字符，不满足条件。
+
+// iuop与iikd、kadgpf均有相同的字符，不满足条件。
+
+// iikd与kadgpf有相同的字符，不满足条件。
+
+// 因此，输出为14。
+
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
