@@ -10,7 +10,6 @@ public class MinNumTest {
         Scanner in = new Scanner(System.in);
         while (in.hasNext()) {
             String[] arrays = in.nextLine().split(" ");
-
             System.out.println(minNum(arrays));
         }
     }

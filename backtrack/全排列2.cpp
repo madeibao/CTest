@@ -7,7 +7,7 @@ using namespace std;
 
 class Solution {
 public:
-	vector<vector<int> > res;
+	  vector<vector<int> > res;
     vector<vector<int>> permute(vector<int>& nums) {
         dfs(nums,0,nums.size());
         return res;

@@ -11,6 +11,7 @@ public:
         sort(nums.begin(), nums.end());  // 不能去重
 
         vector<vector<int>> res;// 最终结果
+        
         int n = nums.size();
 
         for(int i=0;i<n;i++) {
@@ -33,6 +34,7 @@ public:
         		}
 
 				if(b==c)break;//若两个指针相等了还无解，就不用再比下去了
+
 				if(nums[b]+nums[c]==target) {
                 	res.push_back({nums[i],nums[b],nums[c]});
             	}

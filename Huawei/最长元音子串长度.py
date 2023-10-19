@@ -16,6 +16,8 @@ def max_aeiou(s):
 
 
 print(max_aeiou("asdbuiodevauufgh"))
+print("\n")
+print(max_aeiou("asdbuiodevauufgh"))
 
 
 
