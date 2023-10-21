@@ -58,6 +58,8 @@ public:
 int main(int argc, char** argv){
 
 
-
+    string s1 = "aabcc", s2 = "dbbca", s3 = "aadbbcbcac";
+    Solution s;
+    cout<<s.isInterleave(s1,s2,s3)<<endl;
 	return 0;
 }
