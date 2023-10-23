@@ -1,5 +1,4 @@
 
-
 #include<iostream>
 #include<bits/stdc++.h>
 
@@ -9,13 +8,6 @@ class Solution {
 public:
 	vector<vector<int>> result; // 存放符合条件结果的集合
     vector<int> path; // 用来存放符合条件结果
-    vector<vector<int>> combine(int n, int k) {
-
-    	result.clear();
-    	path.clear();
-		dfs(n, k, 1);
-        return result;
-    }
 
     void dfs(int n, int k, int startIndex){
     	if(path.size()==k) {
@@ -30,6 +22,12 @@ public:
     	}
     }
 
+    vector<vector<int>> combine(int n, int k) {
+    	result.clear();
+    	path.clear();
+		dfs(n, k, 1);
+        return result;
+    }
 };
 
 int main(int argc, char**argv) {

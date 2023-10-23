@@ -33,12 +33,14 @@ private:
         }
 
         visited[i][j] = true;
+        
         if (dfs(board, visited, word, str_idx + 1, i + 1, j) ||
             dfs(board, visited, word, str_idx + 1, i - 1, j) ||
             dfs(board, visited, word, str_idx + 1, i, j + 1) ||
             dfs(board, visited, word, str_idx + 1, i, j - 1)) {
                 return true;
-            }
+        }
+
         visited[i][j] = false;
         return false;
     }

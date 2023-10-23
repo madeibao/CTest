@@ -4,7 +4,7 @@
 using namespace std;
 
 class Solution {
-    public:
+public:
     void brack(vector<vector<int>> &res, vector<int> temp, int start, int end) {
         if(start==end) {
             res.emplace_back(temp);

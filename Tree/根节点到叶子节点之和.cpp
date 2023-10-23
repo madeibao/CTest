@@ -43,3 +43,7 @@ int main(int argc, char** arg) {
     cout<<s2.sumNumbers(root)<<endl;
 
 }
+
+
+// 12 + 13 = 25
+

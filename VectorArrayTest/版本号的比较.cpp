@@ -22,6 +22,7 @@ public:
         while(i1 < version1.size() && i2 < version2.size()) {
             v1_num = 0;
             v2_num = 0;
+            
             while(i1<version1.size() && version1[i1] != '.') {
                 v1_num = v1_num*10 + version1[i1++] - '0';
             }
@@ -30,8 +31,13 @@ public:
                 v2_num = v2_num*10 + version2[i2++] - '0';
             }
             i2++;
-            if(v1_num < v2_num) return -1;
-            else if(v1_num > v2_num) return 1;
+
+            if(v1_num < v2_num) {
+                return -1;
+            }
+            else if(v1_num > v2_num){
+                return 1;
+            }
         }
 
 
