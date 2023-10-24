@@ -12,7 +12,7 @@ int main() {
 
     mymap.at("alpha") = 10;
     mymap.at("beta") = 20;
-    mymap["gamma"] = 30;   // 不同的表示方式
+    mymap.at("gamma") = 30;
 
     for (auto& x : mymap) {
         std::cout << x.first << ": " << x.second << '\n';

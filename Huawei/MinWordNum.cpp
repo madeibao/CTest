@@ -33,3 +33,8 @@ int main() {
 
     return 0;
 }
+
+
+
+bdni,woooood 
+bind,wrong,wood

@@ -7,8 +7,6 @@
 
 using namespace std;
 
-using namespace std;
-
 vector<string> split(string s, char token) {
     stringstream iss(s);
     string word;
