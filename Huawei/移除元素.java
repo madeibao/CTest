@@ -17,7 +17,8 @@ public class Main {
             if (nums[left] == val) {
                 nums[left] = nums[right - 1];
                 right--;
-            } else {
+            } 
+            else {
                 left++;
             }
         }

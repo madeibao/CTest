@@ -1,5 +1,26 @@
 
 
+string 的初始化构造函数
+
+string(int n,char c); //用n个字符c初始化
+
+
+char c = 'a';
+string s(1,c);
+
+#include "iostream"
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+    string str = string(2,'a');
+    cout<<str<<endl;
+    return 0;
+}
+
+//_______________________________________________________________________________________________________________
+
 
 #include<bits/stdc++.h>
 #define ll long long
@@ -56,3 +77,29 @@ int main() {
 		for (auto& ch : s) if (!('0' <= ch && ch <= '9')) return false;
 		return true;
 	}
+
+
+
+—————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+
+
+
+#include "iostream"
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+    string str = string(2,'a');
+    cout<<str<<endl;
+
+    unordered_set<char> set2(str.begin(),str.end());
+
+    for(auto i:set2) {
+        cout<<i<<" ";
+    }
+    return 0;
+}
+
+
+

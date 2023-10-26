@@ -22,6 +22,37 @@ int main(int argc, char** argv) {
 
 
 
+
+
+A的ASSCII值是65，那么zhi小写a就是65+32=97
+
+
+	A 65
+	a 97
+
+
+#include <iostream>  
+#include <string>  
+  
+int main() {  
+    std::string str = "Hello, world!";  
+      
+    // 查找字符 'o'  
+    size_t pos = str.find('o');  
+    if (pos != std::string::npos) {  
+        std::cout << "'o' found at position: " << pos << '\n';  
+    } else {  
+        std::cout << "'o' not found\n";  
+    }  
+      
+    return 0;  
+}
+
+
+
+
+
+
 // Java 内存模型
 
 // reenLock
@@ -29,4 +60,3 @@ int main(int argc, char** argv) {
 // Synchronized
 
 // Java 线程池
-

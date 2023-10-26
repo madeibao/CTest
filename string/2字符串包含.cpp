@@ -21,3 +21,22 @@ int main() {
     cout<<count<<endl;
     return 0;
 }
+
+
+//------------------------------------------------------------------------------------------------------------
+// 查找指定的字符来进行
+
+
+#include "iostream"
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+
+    string str = "abcdefgHI";
+    if(str.find('a')!=-1) {
+        cout<<"find"<<endl;
+    }
+    return 0;
+}

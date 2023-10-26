@@ -14,7 +14,22 @@ int main(int argc, char** argv) {
 		map2[nums[i]]++;
 	}
 
+
+	//-----------------------------------------------------------------------
+	// 更加简单的写法
+	
+	unordered_map<int, int> map3;//hash计数
+
+	for(auto i:n) {
+		map3[i]++;
+	}
+
 	for ( auto it = map2.begin(); it != map2.end(); ++it ) {
+		cout << " " << it->first << ":" << it->second<<endl;
+	}
+
+	cout<<endl;
+	for ( auto it = map3.begin(); it != map3.end(); ++it ) {
 		cout << " " << it->first << ":" << it->second<<endl;
 	}
 
