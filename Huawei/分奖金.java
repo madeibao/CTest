@@ -1,5 +1,6 @@
 
 
+
 public class ShareBonus {
     public static void main(String[] args) {
         String peopleNumber = "3";

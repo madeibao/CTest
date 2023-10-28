@@ -33,3 +33,11 @@ def main():
 	return result
 
 print(main())
+
+
+
+
+
+# 6
+# 1 -2 3 4 -9 7
+# 10
