@@ -21,3 +21,12 @@ if len(ans) > 0:
     print(" ".join(ans))
 else:
     print("null")
+
+
+
+# 4
+# abc
+# dasd
+# tad
+# bca
+# abc
