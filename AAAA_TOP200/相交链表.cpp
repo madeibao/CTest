@@ -50,7 +50,7 @@ int main(int argc, char** argv) {
     n6->next = nullptr;
 
 
-    	ListNode* a = new ListNode(9);
+    ListNode* a = new ListNode(9);
 	ListNode* b = new ListNode(8);
 	ListNode* c = new ListNode(7);
 	ListNode* d = new ListNode(6);

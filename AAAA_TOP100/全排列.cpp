@@ -1,43 +1,42 @@
 
-#include "iostream"
-#include "bits/stdc++.h"
+#include<iostream>
+#include<bits/stdc++.h>
 
 using namespace std;
+
 class Solution {
 public:
-    int n;
-    vector<vector<int>> r;
-    void DFS(vector<int>& a, int s){
-        if(s == n){ // 所有位置都交换过
-            r.emplace_back(a);
+    vector<vector<int>> permute(vector<int>& nums) {
+        dfs(nums, 0);
+        return res;
+    }
+private:
+    vector<vector<int>> res;
+    void dfs(vector<int> nums, int x) {
+        if (x == nums.size() - 1) {
+            res.push_back(nums);      // 添加排列方案
             return;
         }
-        for(int i=s;i<n;i++){
-            swap(a[i], a[s]); // 交换位置i和s对应元素
-            DFS(a, s+1); // 深搜起始交换位置+1
-            swap(a[i], a[s]); // 回溯，交换位置i和s对应元素
+        for (int i = x; i < nums.size(); i++) {
+            swap(nums[i], nums[x]);   // 交换，将 nums[i] 固定在第 x 位
+            dfs(nums, x + 1);         // 开启固定第 x + 1 位元素
+            swap(nums[i], nums[x]);   // 恢复交换
         }
-
-    }
-    vector<vector<int>> permute(vector<int>& nums) {
-        n = nums.size();
-        DFS(nums, 0); // 从起始交换位置0开始深搜
-        return r;
     }
 };
 
+int main() {
 
-int main(int argc, char** argv) {
+    vector<int> nums {1,2,3};
+    vector<vector<int>> res;
+    Solution s2;
+    res = s2.permute(nums);
+    for(auto i:res) {
+        for(auto j:i) {
+            cout<<j<<" ";
+        }
+        cout<<endl;
+    }
 
-	vector<vector<int>> res;
-	Solution s;
-	vector<int> nums {1,2,3};
-	res = s.permute(nums);
-	for(auto i:res) {
-		for(auto j:i) {
-			cout<<j<<" ";
-		}
-		cout<<endl;
-	}
-	return 0;
+    return 0;
 }
