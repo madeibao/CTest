@@ -13,7 +13,8 @@ public:
     int numDecodings(string s) {
         if (s[0] == '0') return 0;
         vector<int> dp(s.size()+1);
-        dp[0]=1;dp[1]=1;
+        dp[0]=1;
+        dp[1]=1;
         for (int i =1; i < s.size(); i++) {
             if (s[i] == '0')//1.s[i]为0的情况
                 if (s[i - 1] == '1' || s[i - 1] == '2') //s[i - 1]等于1或2的情况

@@ -16,35 +16,35 @@ class Solution {
 public:
     vector<int> rightSideView(TreeNode* root) {
 
-    	vector<int> res;
+        if(root==nullptr) {
+            return {};
+        }
 
+        vector<int> res;
     	queue<TreeNode*> queue2;
-
     	queue2.push(root);
 
     	while (!queue2.empty()) {
     		int n = queue2.size();
 
-    		for (int i = 0; i < n;i++) {
+    		for (int i=0;i<n;i++) {
     			TreeNode* node = queue2.front();
+                queue2.pop();
     			if(node->left!=nullptr) {
     				queue2.push(node->left);
     			}
     			if(node->right!=nullptr) {
     				queue2.push(node->right);
     			}
-
     			if(i==n-1) {
-    				res.push(node-val);
+    				res.push_back(node->val);
     			}
     		}
     	}
 
     	return res;
     }
-
 };
-
 
 int main() {
 
@@ -54,7 +54,6 @@ int main() {
 
     root->left = l2;
     root->right = l3;
-
 
     Solution s2;
     vector<int> res;
