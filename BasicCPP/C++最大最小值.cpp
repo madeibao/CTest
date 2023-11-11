@@ -28,3 +28,24 @@ int main()
     cout<<*max_element(v.begin(),v.end())<<endl;//最大元素
     return 0;
 }
+
+
+//---------------------------------------------------------------------------------
+
+#include<iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
+
+int main()
+{
+
+    int a = 3, b = 4, c = 10;
+
+    cout<<min({a,b,c})<<endl;
+    cout<<max({a,b,c})<<endl;
+    return 0;
+}
+
+
+

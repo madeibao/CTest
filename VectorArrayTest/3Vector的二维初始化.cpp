@@ -51,3 +51,40 @@ int main(int argc, char** argv) {
 }
 
 
+//----------------------------------------------------------------------------
+
+#include<iostream>
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+
+    vector<vector<int>> nums = {{1,1,3},
+                                {2,3,4},
+                                {9,9,8}};
+
+
+    int m = nums.size();
+    int n = nums[0].size();
+
+    // 按照每一行来进行统计
+    for(int i=0;i<m;i++) {
+        for(int j=0;j<n;j++) {
+            cout<<nums[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+
+    // 按照列来进行打印
+    cout<<"----------------------------"<<endl;
+    // 按照每一列来进行统计
+    for(int i=0;i<n;i++) {
+        for(int j=0;j<m;j++) {
+            cout<<nums[j][i]<<" ";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
+
