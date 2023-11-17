@@ -23,6 +23,15 @@ bool cmp2(PII a,PII b)
     //return a.second<b.second;//根据second的值升序排序
 }
 
+
+// 如果第二个值相等，按照一个值递增排序，否则按照第二个递增排序
+bool cmp3(PII a,PII b) {
+    if(a.second==b.second) {   
+        return a.first<b.first;
+    }
+    return a.second<b.second;
+}
+
 int main()
 {
 

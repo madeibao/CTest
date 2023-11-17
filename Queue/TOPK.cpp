@@ -44,6 +44,26 @@ public:
 };
 
 
+class Solution {
+public:
+    vector<int> topKFrequent2(vector<int>& nums, int k) {
+        vector<int> ans;
+        int n = nums.size();
+        unordered_map<int,int>mp;
+        for( auto num : nums )  ++mp[num];
+        vector<pair<int,int>> vec;
+        for( auto it = mp.begin();it!=mp.end();it++ ){
+            vec.push_back(pair<int,int>{it->second,it->first});
+        }
+        sort(vec.begin(),vec.end(),greater<>{});        
+        for( auto it = vec.begin();it!=vec.begin()+k;it++ ){
+            ans.push_back(it->second);
+        }
+        return ans;
+    }   
+};
+
+
 int main(int argc, char* argv[]) {
 
 	vector<int> nums = {1,1,1,2,2,3};
