@@ -40,5 +40,9 @@ int main(int argc, char **argv) {
         cout << i.first << " " << i.second << endl;
     }
 	
+
+
+	map2.erase(22); // 删除 map 中一个键
+
 	return 0;
 }
