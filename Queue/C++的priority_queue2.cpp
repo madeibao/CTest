@@ -17,7 +17,7 @@ struct cmp {
 
 int main(int argc, char** argv) {
 
-	priority_queue<fruit, vector<fruit>, cmp > queue;
+	priority_queue<fruit, vector<fruit>, cmp> queue;
 
 	f1.name = "桃子";
 	f1.prize = 3;
