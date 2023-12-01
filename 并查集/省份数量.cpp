@@ -74,7 +74,7 @@ private:
 		if(a==b) {
 			return;
 		}
-		father[v] = u;
+		father[a] = b;
 	}
 
 	bool same(int u, int v) {
