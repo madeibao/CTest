@@ -1,6 +1,9 @@
 
 
 
+// 首先看在 C++ 17 引入的 gcd 函数（在 numeric 头文件中），一种可能的实现如下：
+
+
 #include<iostream>
 #include<bits/stdc++.h>
 
